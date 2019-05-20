@@ -1,5 +1,5 @@
 # Pebble-RSS-Reader
-A full-text RSS Reader for the Pebble Smartwatch. Uses SimplyJS, because CloudPebble is gone and I couldn't get pebble.js to work in the SDK. It supports a total of nine different RSS feeds.
+A full-text RSS Reader for the Pebble Smartwatch. Uses SimplyJS, because CloudPebble is gone and I couldn't get PebbleJS to work in the SDK. It supports a total of nine different RSS feeds.
 
 To use:
 1. Install the SimplyJS app on your Pebble, from the Pebble/Rebble app store.
