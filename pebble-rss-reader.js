@@ -128,7 +128,7 @@ function getArticles(url, firstArticleReady) {
 	jsonUrl = "https://api.rss2json.com/v1/api.json?rss_url="+url+"&api_key=" + rss2jsonApiKey;
 	getArticlesTimeout = setTimeout(function(){
 		/* This timeout is cancelled once a feed has been successfully retrieved. */
-		simply.body("We're having trouble retrieving this feed. Please close and try again!");
+		simply.body("We're having trouble retrieving this feed. Please close and try again!", true);
 	}, 5000);
 	ajax({ url: jsonUrl }, function(json) {
 		json = JSON.parse(json);
@@ -187,9 +187,6 @@ function getArticles(url, firstArticleReady) {
 function formatText(text) {
 	text = text.replace("<a href=\"https://blockads.fivefilters.org/\">Let's block ads!</a></strong> <a href=\"https://blockads.fivefilters.org/acceptable.html\">(Why?)</a>","");
 	text = text.replace("<br>", "\n");
-	text = text.replace(/<h[\d]>(.*?)<\/h[\d]>/g, String.call.bind("$1".toUpperCase));
-	text = text.replace(/<b>(.*?)<\/b>/g, String.call.bind("$1".toUpperCase));
-	text = text.replace(/<strong>(.*?)<\/strong>/g, String.call.bind("$1".toUpperCase));
 	text = text.replace(/<[^>]*>/g, '');
 	text = text.replace( /[ ]{2,}/g, ' ' );
 	text = text.replace("&quot;", '"');
