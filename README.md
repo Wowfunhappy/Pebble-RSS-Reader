@@ -1,5 +1,5 @@
 # Pebble-RSS-Reader
-A full-text RSS Reader for the Pebble Smartwatch. Uses SimplyJS, because CloudPebble is gone and I couldn't get pebble.js to work in the SDK.
+A full-text RSS Reader for the Pebble Smartwatch. Uses SimplyJS, because CloudPebble is gone and I couldn't get pebble.js to work in the SDK. It supports a total of nine different RSS feeds.
 
 To use:
 1. Install the SimplyJS app on your Pebble, from the Pebble/Rebble app store.
@@ -7,6 +7,8 @@ To use:
 3. Grab an API key from rss2json.com, and paste it into the script where it says `YourApiKeyGoesHere`
 4. Replace the existing categories and RSS feeds in the file with your own. This should be self explanatory, but please feel free to ask for help if you need it.
 5. Save the Gist and click "View Raw". Paste that URL into the SimplyJS app's settings.
+
+When you open the app, choose a category and then a feed with the corrosponding top, middle, or bottom button. When reading, press the select button to go to the next page, or the back button to go back. Long press select to jump to the next article.
 
 I made this because seemingly none of the existing RSS readers for the Pebble work as of 2019, except for xNews, which only displays the first few sentences. By contrast, if you feed this script a full-text RSS feed, you will be able to read the entire thing on your smartwatch. This is very useful in social situations where pulling out your phone would be rude, but furtively looking at your watch will go unnoticed. ;)
 
