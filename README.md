@@ -3,7 +3,7 @@ A full-text RSS Reader for the Pebble Smartwatch. Uses SimplyJS, because CloudPe
 
 To use:
 1. Install the SimplyJS app on your Pebble, from the Pebble/Rebble app store.
-2. Copy and paste the contents of pebble-rss-reader.js into a new [Gist](https://gist.github.com).
+2. Copy and paste the contents of pebble-rss-reader.js into a [new Gist](https://gist.github.com).
 3. Grab an API key from rss2json.com, and paste it into the script where it says `YourApiKeyGoesHere`
 4. Replace the existing categories and RSS feeds in the file with your own. This should be self explanatory, but please feel free to ask for help if you need it.
 5. Save the Gist and click "View Raw". Paste that URL into the SimplyJS app's settings.
