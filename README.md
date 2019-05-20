@@ -8,7 +8,7 @@ To use:
 4. Replace the existing categories and RSS feeds in the file with your own. This should be self explanatory, but please feel free to ask for help if you need it.
 5. Save the Gist and click "View Raw". Paste that URL into the SimplyJS app's settings.
 
-When you open the app, choose a category and then a feed with the corrosponding top, middle, or bottom button. When reading, select goes to the next page, and the back button goes back. You can long press select to jump to the next article.
+When you open the app on your watch, choose a category and then a feed with the corrosponding top, middle, or bottom button. When reading, select goes to the next page, and the back button goes back. You can long press select to jump to the next article.
 
 I made this because seemingly none of the existing RSS readers for the Pebble work as of 2019, except for xNews, which only displays the first few sentences. By contrast, if you feed this script a full-text RSS feed, you will be able to read the entire thing on your smartwatch. This is very useful in social situations where pulling out your phone would be rude, but furtively looking at your watch will go unnoticed. ;)
 
