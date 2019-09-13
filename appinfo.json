@@ -1,0 +1,63 @@
+{
+  "appKeys": {},
+  "capabilities": [
+    "configurable"
+  ],
+  "companyName": "Jonathan Alland",
+  "longName": "RSS Reader",
+  "resources": {
+    "media": [
+      {
+        "file": "images/menu_icon.png",
+        "menuIcon": true,
+        "name": "IMAGE_MENU_ICON",
+        "type": "bitmap"
+      },
+      {
+        "file": "images/tile_splash.png",
+        "name": "IMAGE_TILE_SPLASH",
+        "type": "bitmap"
+      },
+      {
+        "file": "fonts/UbuntuMono-Regular.ttf",
+        "name": "MONO_FONT_14",
+        "type": "font"
+      },
+      {
+        "file": "images/action_up.png",
+        "name": "ACTION_UP",
+        "type": "bitmap"
+      },
+      {
+        "file": "images/action_down.png",
+        "name": "ACTION_DOWN",
+        "type": "bitmap"
+      },
+      {
+        "file": "images/action_check.png",
+        "name": "ACTION_CHECK",
+        "type": "bitmap"
+      },
+      {
+        "file": "images/action_next.png",
+        "name": "ACTION_NEXT",
+        "type": "bitmap"
+      }
+    ]
+  },
+  "sdkVersion": "3",
+  "shortName": "RSS Reader",
+  "targetPlatforms": [
+    "aplite",
+    "basalt",
+    "chalk",
+    "diorite",
+    "emery"
+  ],
+  "uuid": "133215f0-cf20-4c05-997b-3c9be5a64e5b",
+  "versionCode": 1,
+  "versionLabel": "0.4",
+  "watchapp": {
+    "watchface": false
+  }
+}

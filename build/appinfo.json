@@ -1,0 +1,64 @@
+{
+    "targetPlatforms": [
+        "aplite", 
+        "basalt", 
+        "chalk", 
+        "diorite", 
+        "emery"
+    ], 
+    "uuid": "133215f0-cf20-4c05-997b-3c9be5a64e5b", 
+    "messageKeys": {}, 
+    "companyName": "Jonathan Alland", 
+    "versionLabel": "0.4", 
+    "capabilities": [
+        "configurable"
+    ], 
+    "sdkVersion": "3", 
+    "appKeys": {}, 
+    "longName": "RSS Reader", 
+    "versionCode": 1, 
+    "shortName": "RSS Reader", 
+    "watchapp": {
+        "watchface": false
+    }, 
+    "resources": {
+        "media": [
+            {
+                "menuIcon": true, 
+                "type": "bitmap", 
+                "name": "IMAGE_MENU_ICON", 
+                "file": "images/menu_icon.png"
+            }, 
+            {
+                "type": "bitmap", 
+                "name": "IMAGE_TILE_SPLASH", 
+                "file": "images/tile_splash.png"
+            }, 
+            {
+                "type": "font", 
+                "name": "MONO_FONT_14", 
+                "file": "fonts/UbuntuMono-Regular.ttf"
+            }, 
+            {
+                "type": "bitmap", 
+                "name": "ACTION_UP", 
+                "file": "images/action_up.png"
+            }, 
+            {
+                "type": "bitmap", 
+                "name": "ACTION_DOWN", 
+                "file": "images/action_down.png"
+            }, 
+            {
+                "type": "bitmap", 
+                "name": "ACTION_CHECK", 
+                "file": "images/action_check.png"
+            }, 
+            {
+                "type": "bitmap", 
+                "name": "ACTION_NEXT", 
+                "file": "images/action_next.png"
+            }
+        ]
+    }
+}
