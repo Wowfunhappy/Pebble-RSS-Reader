@@ -7,7 +7,7 @@ var blackStatusBar = {
 	color: "white",
 	backgroundColor: "black",
 	separator: 'none'
-}
+};
 
 var defaultFeeds = [{
 	title: "Vox",
@@ -53,7 +53,7 @@ function selectFeed()
 	/*Overwrite default feeds with what user input in Settings.*/
 	if (Settings.option().feeds.length > 0) {
 		feeds = Settings.option().feeds;
-		console.log()
+		console.log("Opened configurable");
 	}
 	else {
 		feeds = defaultFeeds;
