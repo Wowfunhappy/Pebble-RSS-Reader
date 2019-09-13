@@ -288,7 +288,6 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 			}
 		}
 		if (e.button === 'up' || e.button === 'back') {
-			console.log('Hi');
 			this.hide();
 		}
 	});
