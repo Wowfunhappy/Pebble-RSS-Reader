@@ -37,7 +37,7 @@ var defaultFeeds = [{
 
 Settings.config({url: 'https://wowfunhappy.github.io/Pebble-RSS-Reader/', hash: true}, function(){
 	console.log("opened configurable");
-	if (Settings.option().feeds.length < 1) {
+	if (typeof Settings.option().feeds === 'undefined' || Settings.option().feeds.length < 1) {
 		Settings.option("feeds", defaultFeeds);
 	}
 }, function(){
@@ -51,9 +51,8 @@ selectFeed();
 function selectFeed()
 {
 	/*Overwrite default feeds with what user input in Settings.*/
-	if (Settings.option().feeds.length > 0) {
+	if (typeof Settings.option().feeds !== 'undefined' && Settings.option().feeds.length > 0) {
 		feeds = Settings.option().feeds;
-		console.log("Opened configurable");
 	}
 	else {
 		feeds = defaultFeeds;
@@ -83,10 +82,13 @@ function getArticles(feed) {
 	loadingCard.show();
 	articleList = [];
 	jsonUrl = "https://api.rss2json.com/v1/api.json?rss_url=" + feed.url;
-	rss2jsonApiKey = Settings.option().rss2jsonApiKey;
-	if (rss2jsonApiKey !== "") {
+
+	var rss2jsonApiKey = "";
+	if (typeof Settings.option().rss2jsonApiKey !== 'undefined') {
+		rss2jsonApiKey = Settings.option().rss2jsonApiKey;
 		jsonUrl = jsonUrl + "&api_key=" + rss2jsonApiKey + "&count=100";
 	}
+
 	ajax({ url: jsonUrl }, function(json) {
 		json = JSON.parse(json);
 		if (json.status === "ok" && !shouldCancel) {

@@ -51,7 +51,10 @@
     if (hash.feeds.length > 0) {
       feeds = hash.feeds;
     }
-    rss2jsonApiKey = hash.rss2jsonApiKey;
+    if (typeof hash.rss2jsonApiKey === 'undefined')
+    {
+      rss2jsonApiKey = hash.rss2jsonApiKey;
+    }
   }
 
   document.addEventListener("DOMContentLoaded", function() {
