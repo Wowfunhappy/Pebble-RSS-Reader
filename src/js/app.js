@@ -171,47 +171,39 @@ function processParagraphs(pageArr, maxCharsPerPage, content) {
 
 
 function formatText(text) {
-	/* Useful: https://www.i18nqa.com/debug/utf8-debug.html */
 	if(!text) {
 		return "";
 	}
 	else {
-		//text = text.replace(/<p><strong><a href="https:\/\/blockads\.fivefilters\.org\/">Let's block ads!<\/a><\/strong> <a href="https:\/\/blockads\.fivefilters\.org\/acceptable\.html">\(Why\?\)<\/a><\/p>/g,"");
 		text = text.replace(/<br>/g, "\n");
+
 		text = text.replace(/<caption.*?>.*?<\/caption>/g, "");
 		text = text.replace(/<figcaption.*?>.*?<\/figcaption>/g, "");
 		text = text.replace(/<small.*?>.*?<\/small>/g, "");
 		text = text.replace(/<cite.*?>.*?<\/cite>/g, "");
+
 		text = text.replace(/<.*? .*?class=".*?caption.*?".*?>.*?<\/.*?>/g, "");
 		text = text.replace(/<.*? .*?class=".*?credit.*?".*?>.*?<\/.*?>/g, "");
 		text = text.replace(/<.*? .*?data-id="injected-recirculation-link".*?>.*?<\/.*?>/g, "");
-		// text = text.replace(/<\/{0,1}blockquote.*?>/g, "\"");
-		text = text.replace(/<[^>]*>/g, '');
+
+		text = text.replace(/<[^>]*>/g, ''); //Remove html tags.
 		text = text.replace(/[ ]{2,}/g, ' '); //Remove multiple spaces
 		text = text.replace(/&nbsp;/g, " ");
 
-		//text = text.replace(/[“”]/g, '"');
 		text = text.replace(/&quot;/g, '"');
 		text = text.replace(/&[lr]dquo;/g, '"');
-		//text = text.replace(/&#822[0-1];/g, '"');
-
-		// text = text.replace(/[‘’]/g, "'");
-		// text = text.replace(/â€(™|˜)/, "'");
 		text = text.replace(/&[lr]squo;/g, "'");
-		text = text.replace(/&#821[6-9];/g, "'");
 
 		text = text.replace(/&mdash;/g, "—");
-		//text = text.replace(/&#8212;/g, "—");
 		text = text.replace(/&ndash;/g, "–");
-		//text = text.replace(/&#8211;/g, "—");
 
 		text = text.replace(/&hellip;/g, "…");
-		//text = text.replace(/&#8230;/g, "…");
 
 		text = text.replace(/&gt;/g, '>');
 		text = text.replace(/&lt;/g, '<');
 
 		text = text.replace(/&amp;/g, "&");
+
 		text = text.replace(/^[<>[\]]*$/g,'');
 		text = text.replace(/^Advertisement$/g,'');
 		text = text.replace(/^Let's block ads! \(Why\?\)$/g,'');
