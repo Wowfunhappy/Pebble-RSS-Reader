@@ -287,8 +287,9 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 				articleSelectMenu.selection(0, articleNum + 1);
 			}
 		}
-		else if (e.button === 'up' || e.button === 'back') {
-			articleCard.hide();
+		if (e.button === 'up' || e.button === 'back') {
+			console.log('Hi');
+			this.hide();
 		}
 	});
 	articleCard.on('longClick', 'select', function() {
