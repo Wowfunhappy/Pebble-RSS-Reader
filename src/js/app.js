@@ -13,11 +13,11 @@ var defaultFeeds = [{
 	title: "Vox",
 	url: "https://www.vox.com/rss/full.xml"
 	},{
-	title: "Vice News",
-	url: "http://news.vice.com/rss"
-	},{
 	title: "The Atlantic",
 	url: "https://www.theatlantic.com/feed/all"
+	},{
+	title: "Vice News",
+	url: "http://news.vice.com/rss"
 	},{
 	title: "Time Magazine",
 	url: "http://feeds2.feedburner.com/time/topstories"
