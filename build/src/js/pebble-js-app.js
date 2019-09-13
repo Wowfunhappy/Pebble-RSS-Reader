@@ -146,7 +146,7 @@ var defaultFeeds = [{
 	url: "https://www.eater.com/rss/full.xml"
 	}];
 
-Settings.config({url: 'http://67.254.246.159/~Jonathan/pebble-rss-settings', hash: true}, function(){
+Settings.config({url: 'https://wowfunhappy.github.io/Pebble-RSS-Reader/', hash: true}, function(){
 	console.log("opened configurable");
 	if (Settings.option().feeds.length < 1) {
 		Settings.option("feeds", defaultFeeds);

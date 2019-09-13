@@ -1,9 +1,9 @@
 Archive member included because of file (symbol)
 
-/Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
-                              src/simply/simply_accel.c.40.o (accel_data_service_unsubscribe)
+/Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                              src/simply/simply_accel.c.42.o (accel_data_service_unsubscribe)
 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_aeabi_ldivmod.o)
-                              src/simply/simply_menu.c.40.o (__aeabi_ldivmod)
+                              src/simply/simply_menu.c.42.o (__aeabi_ldivmod)
 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(bpabi.o)
                               /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_aeabi_ldivmod.o) (__gnu_ldivmod_helper)
 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_dvmd_tls.o)
@@ -29,661 +29,659 @@ Discarded input sections
  .jcr           0x0000000000000000        0x0 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
  .tm_clone_table
                 0x0000000000000000        0x0 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/crtbegin.o
- .text          0x0000000000000000        0x0 src/main.c.40.o
- .bss           0x0000000000000000        0x0 src/main.c.40.o
- .text          0x0000000000000000        0x0 src/simply/simply.c.40.o
- .bss           0x0000000000000000        0x0 src/simply/simply.c.40.o
- .text          0x0000000000000000        0x0 src/simply/simply_accel.c.40.o
- .bss           0x0000000000000000        0x0 src/simply/simply_accel.c.40.o
- .text          0x0000000000000000        0x0 src/simply/simply_menu.c.40.o
- .bss           0x0000000000000000        0x0 src/simply/simply_menu.c.40.o
- .text          0x0000000000000000        0x0 src/simply/simply_msg.c.40.o
- .bss           0x0000000000000000        0x0 src/simply/simply_msg.c.40.o
- .text          0x0000000000000000        0x0 src/simply/simply_res.c.40.o
- .bss           0x0000000000000000        0x0 src/simply/simply_res.c.40.o
+ .text          0x0000000000000000        0x0 src/main.c.42.o
+ .bss           0x0000000000000000        0x0 src/main.c.42.o
+ .text          0x0000000000000000        0x0 src/simply/simply.c.42.o
+ .bss           0x0000000000000000        0x0 src/simply/simply.c.42.o
+ .text          0x0000000000000000        0x0 src/simply/simply_accel.c.42.o
+ .bss           0x0000000000000000        0x0 src/simply/simply_accel.c.42.o
+ .text          0x0000000000000000        0x0 src/simply/simply_menu.c.42.o
+ .bss           0x0000000000000000        0x0 src/simply/simply_menu.c.42.o
+ .text          0x0000000000000000        0x0 src/simply/simply_msg.c.42.o
+ .bss           0x0000000000000000        0x0 src/simply/simply_msg.c.42.o
+ .text          0x0000000000000000        0x0 src/simply/simply_res.c.42.o
+ .bss           0x0000000000000000        0x0 src/simply/simply_res.c.42.o
  .text.id_filter
-                0x0000000000000000        0xa src/simply/simply_res.c.40.o
+                0x0000000000000000        0xa src/simply/simply_res.c.42.o
  .text.simply_res_remove_image
-                0x0000000000000000       0x18 src/simply/simply_res.c.40.o
- .text          0x0000000000000000        0x0 src/simply/simply_splash.c.40.o
- .bss           0x0000000000000000        0x0 src/simply/simply_splash.c.40.o
- .text          0x0000000000000000        0x0 src/simply/simply_stage.c.40.o
- .bss           0x0000000000000000        0x0 src/simply/simply_stage.c.40.o
+                0x0000000000000000       0x18 src/simply/simply_res.c.42.o
+ .text          0x0000000000000000        0x0 src/simply/simply_splash.c.42.o
+ .bss           0x0000000000000000        0x0 src/simply/simply_splash.c.42.o
+ .text          0x0000000000000000        0x0 src/simply/simply_stage.c.42.o
+ .bss           0x0000000000000000        0x0 src/simply/simply_stage.c.42.o
  .text.id_filter
-                0x0000000000000000        0xa src/simply/simply_stage.c.40.o
+                0x0000000000000000        0xa src/simply/simply_stage.c.42.o
  .text.animation_filter
-                0x0000000000000000        0xa src/simply/simply_stage.c.40.o
+                0x0000000000000000        0xa src/simply/simply_stage.c.42.o
  .text.animation_element_filter
-                0x0000000000000000        0xa src/simply/simply_stage.c.40.o
- .text          0x0000000000000000        0x0 src/simply/simply_ui.c.40.o
- .bss           0x0000000000000000        0x0 src/simply/simply_ui.c.40.o
- .text          0x0000000000000000        0x0 src/simply/simply_voice.c.40.o
- .bss           0x0000000000000000        0x0 src/simply/simply_voice.c.40.o
- .text          0x0000000000000000        0x0 src/simply/simply_wakeup.c.40.o
- .bss           0x0000000000000000        0x0 src/simply/simply_wakeup.c.40.o
- .text          0x0000000000000000        0x0 src/simply/simply_window.c.40.o
- .bss           0x0000000000000000        0x0 src/simply/simply_window.c.40.o
+                0x0000000000000000        0xa src/simply/simply_stage.c.42.o
+ .text          0x0000000000000000        0x0 src/simply/simply_ui.c.42.o
+ .bss           0x0000000000000000        0x0 src/simply/simply_ui.c.42.o
+ .text          0x0000000000000000        0x0 src/simply/simply_voice.c.42.o
+ .bss           0x0000000000000000        0x0 src/simply/simply_voice.c.42.o
+ .text          0x0000000000000000        0x0 src/simply/simply_wakeup.c.42.o
+ .bss           0x0000000000000000        0x0 src/simply/simply_wakeup.c.42.o
+ .text          0x0000000000000000        0x0 src/simply/simply_window.c.42.o
+ .bss           0x0000000000000000        0x0 src/simply/simply_window.c.42.o
  .text.simply_window_set_button
-                0x0000000000000000       0x28 src/simply/simply_window.c.40.o
- .text          0x0000000000000000        0x0 src/simply/simply_window_stack.c.40.o
- .bss           0x0000000000000000        0x0 src/simply/simply_window_stack.c.40.o
- .text          0x0000000000000000        0x0 chalk/appinfo.auto.c.40.o
- .bss           0x0000000000000000        0x0 chalk/appinfo.auto.c.40.o
- .text          0x0000000000000000        0x0 chalk/src/resource_ids.auto.c.40.o
- .bss           0x0000000000000000        0x0 chalk/src/resource_ids.auto.c.40.o
+                0x0000000000000000       0x28 src/simply/simply_window.c.42.o
+ .text          0x0000000000000000        0x0 src/simply/simply_window_stack.c.42.o
+ .bss           0x0000000000000000        0x0 src/simply/simply_window_stack.c.42.o
+ .text          0x0000000000000000        0x0 aplite/appinfo.auto.c.42.o
+ .bss           0x0000000000000000        0x0 aplite/appinfo.auto.c.42.o
+ .text          0x0000000000000000        0x0 aplite/src/resource_ids.auto.c.42.o
+ .bss           0x0000000000000000        0x0 aplite/src/resource_ids.auto.c.42.o
  .data.RESOURCE_ID_MONO_FONT_14
-                0x0000000000000000        0x4 chalk/src/resource_ids.auto.c.40.o
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.42.o
  .data.RESOURCE_ID_ACTION_CHECK
-                0x0000000000000000        0x4 chalk/src/resource_ids.auto.c.40.o
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.42.o
  .data.RESOURCE_ID_IMAGE_TILE_SPLASH
-                0x0000000000000000        0x4 chalk/src/resource_ids.auto.c.40.o
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.42.o
  .data.RESOURCE_ID_ACTION_NEXT
-                0x0000000000000000        0x4 chalk/src/resource_ids.auto.c.40.o
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.42.o
  .data.RESOURCE_ID_IMAGE_MENU_ICON
-                0x0000000000000000        0x4 chalk/src/resource_ids.auto.c.40.o
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.42.o
  .data.RESOURCE_ID_ACTION_UP
-                0x0000000000000000        0x4 chalk/src/resource_ids.auto.c.40.o
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.42.o
  .data.RESOURCE_ID_ACTION_DOWN
-                0x0000000000000000        0x4 chalk/src/resource_ids.auto.c.40.o
- .bss           0x0000000000000000        0x0 /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0x4 aplite/src/resource_ids.auto.c.42.o
+ .bss           0x0000000000000000        0x0 /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.accel_data_service_subscribe__deprecated
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.accel_service_set_samples_per_update
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.action_bar_layer_legacy2_add_to_window
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.action_bar_layer_legacy2_clear_icon
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.action_bar_layer_legacy2_create
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.action_bar_layer_legacy2_destroy
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.action_bar_layer_legacy2_get_layer
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.action_bar_layer_legacy2_remove_from_window
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.action_bar_layer_legacy2_set_background_color_2bit
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.action_bar_layer_legacy2_set_click_config_provider
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.action_bar_layer_legacy2_set_context
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.action_bar_layer_legacy2_set_icon
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_legacy2_create
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_legacy2_destroy
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_legacy2_get_context
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_legacy2_is_scheduled
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_legacy2_schedule
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_legacy2_set_curve
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_legacy2_set_delay
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_legacy2_set_duration
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_legacy2_set_handlers
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_legacy2_set_implementation
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_legacy2_unschedule
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_legacy2_unschedule_all
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_comm_get_sniff_interval
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_comm_set_sniff_interval
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.app_log  0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.app_log  0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_sync_deinit
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_sync_get
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_sync_init
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_sync_set
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_timer_reschedule
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.atan2_lookup
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.atoi     0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.atol     0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.atoi     0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.atol     0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.battery_state_service_peek
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.battery_state_service_subscribe
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.battery_state_service_unsubscribe
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.bitmap_layer_create
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.bitmap_layer_destroy
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.bitmap_layer_get_layer
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.bitmap_layer_set_alignment
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.bitmap_layer_set_background_color_2bit
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.bitmap_layer_set_bitmap
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.bitmap_layer_set_compositing_mode
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.bluetooth_connection_service_peek
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.bluetooth_connection_service_subscribe
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.bluetooth_connection_service_unsubscribe
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.click_number_of_clicks_counted
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.clock_copy_time_string
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.clock_is_24h_style
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.data_logging_create
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.data_logging_finish
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.data_logging_log
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_calc_buffer_size
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_calc_buffer_size_from_tuplets
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_merge
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_read_begin_from_buffer
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_read_first
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_read_next
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_serialize_tuplets
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_serialize_tuplets_to_buffer__deprecated
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_serialize_tuplets_to_buffer_with_iter
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_write_begin
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_write_cstring
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_write_end
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_write_int
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_write_int16
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_write_int32
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_write_int8
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_write_tuplet
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_write_uint16
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_write_uint32
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_write_uint8
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_create_as_sub_bitmap
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_create_with_data
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.gmtime   0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.gmtime   0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gpath_create
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gpath_destroy
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gpath_draw_filled_legacy
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gpath_draw_outline
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gpath_move_to
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gpath_rotate_to
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gpoint_equal
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.graphics_context_set_fill_color_2bit
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.graphics_context_set_stroke_color_2bit
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.graphics_context_set_text_color_2bit
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.graphics_draw_pixel
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.graphics_draw_rect
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.graphics_text_layout_get_max_used_size
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.grect_align
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.grect_clip
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.grect_contains_point
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.grect_crop
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.grect_equal
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.grect_is_empty
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.layer_create
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.layer_get_clips
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.layer_get_hidden
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.layer_insert_above_sibling
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.layer_insert_below_sibling
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.layer_remove_child_layers
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.layer_set_bounds
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.layer_set_clips
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.layer_set_hidden
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.localtime__deprecated
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.memmove  0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.memmove  0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.menu_cell_basic_header_draw
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.menu_cell_title_draw
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.menu_index_compare
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.menu_layer_legacy2_create
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.menu_layer_get_scroll_layer
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.menu_layer_legacy2_set_callbacks__deprecated
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.menu_layer_set_selected_next
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.number_window_create
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.number_window_destroy
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.number_window_get_value
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.number_window_set_label
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.number_window_set_max
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.number_window_set_min
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.number_window_set_step_size
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.number_window_set_value
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.persist_delete
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.persist_exists
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.persist_get_size
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.persist_read_bool
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.persist_read_data__deprecated
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.persist_read_int
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.persist_read_string__deprecated
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.persist_write_bool
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.persist_write_data__deprecated
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.persist_write_int
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.persist_write_string
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.property_animation_legacy2_create
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.property_animation_legacy2_create_layer_frame
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.property_animation_legacy2_destroy
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.property_animation_legacy2_update_gpoint
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.property_animation_legacy2_update_grect
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.property_animation_legacy2_update_int16
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.psleep   0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.rand     0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.psleep   0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.rand     0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.resource_load
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.resource_load_byte_range
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.resource_size
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.rot_bitmap_layer_create
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.rot_bitmap_layer_destroy
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.rot_bitmap_layer_increment_angle
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.rot_bitmap_layer_set_angle
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.rot_bitmap_layer_set_corner_clip_color_2bit
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.rot_bitmap_set_compositing_mode
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.rot_bitmap_set_src_ic
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.scroll_layer_get_shadow_hidden
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.scroll_layer_scroll_down_click_handler
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.scroll_layer_scroll_up_click_handler
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.scroll_layer_set_callbacks
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.scroll_layer_set_frame
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.simple_menu_layer_create
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.simple_menu_layer_destroy
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.simple_menu_layer_get_layer
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.simple_menu_layer_get_selected_index
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.simple_menu_layer_set_selected_index
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.snprintf
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.srand    0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.strcat   0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.strcmp   0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.strcpy   0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.strncat  0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.strncmp  0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.srand    0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.strcat   0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.strcmp   0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.strcpy   0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.strncat  0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.strncmp  0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_legacy2_create
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_legacy2_destroy
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_legacy2_get_content_size
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_legacy2_get_layer
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_legacy2_get_text
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_legacy2_set_background_color_2bit
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_legacy2_set_font
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_legacy2_set_overflow_mode
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_legacy2_set_size
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_legacy2_set_text
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_legacy2_set_text_alignment
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_legacy2_set_text_color_2bit
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.time__deprecated
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.time_ms_deprecated
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.vibes_cancel
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.vibes_enqueue_custom_pattern
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.window_get_fullscreen
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.window_is_loaded
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.window_set_background_color_2bit
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.window_set_click_config_provider
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.window_set_fullscreen
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.window_set_status_bar_icon
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.window_stack_contains_window
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_focus_service_subscribe
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_focus_service_unsubscribe
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_message_get_context
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_message_inbox_size_maximum
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_message_outbox_size_maximum
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.window_multi_click_subscribe
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.window_raw_click_subscribe
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.window_single_repeating_click_subscribe
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_serialize_tuplets_to_buffer
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.persist_read_data
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.persist_read_string
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.persist_write_data
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.dict_size
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.graphics_text_layout_get_content_size
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.simple_menu_layer_get_menu_layer
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.calloc   0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.calloc   0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.bitmap_layer_get_bitmap
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.menu_layer_legacy2_set_callbacks
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.window_get_click_config_context
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.number_window_get_window
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.realloc  0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.realloc  0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_create_blank_2bit
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.click_recognizer_is_repeating
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.accel_raw_data_service_subscribe
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_worker_is_running
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_worker_kill
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_worker_launch
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_worker_message_subscribe
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_worker_message_unsubscribe
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.app_worker_send_message
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.worker_event_loop
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.worker_launch_app
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.heap_bytes_free
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.heap_bytes_used
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.compass_service_peek
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.compass_service_set_heading_filter
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.compass_service_subscribe
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.compass_service_unsubscribe
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.uuid_equal
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.uuid_to_string
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gpath_draw_filled
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_legacy2_set_custom_curve
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.watch_info_get_color
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.watch_info_get_firmware_version
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.watch_info_get_model
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.graphics_capture_frame_buffer_2bit
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.graphics_frame_buffer_is_captured
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.graphics_release_frame_buffer
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.clock_to_timestamp
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.wakeup_query
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.i18n_get_system_locale
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text._localeconv_r
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.setlocale
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.mktime   0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.gcolor_equal__deprecated
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.mktime   0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+ .text.gcolor_equal
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.__profiler_init
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.__profiler_print_stats
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.__profiler_start
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.__profiler_stop
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.bitmap_layer_set_background_color
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.rot_bitmap_layer_set_corner_clip_color
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.clock_get_timezone
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_create
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_get_context
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_is_scheduled
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_set_custom_curve
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_set_delay
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_set_implementation
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_unschedule_all
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_create_blank
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.graphics_capture_frame_buffer
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.graphics_capture_frame_buffer_format
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.property_animation_create_layer_frame
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.property_animation_get_animation
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.property_animation_subject
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.property_animation_update_gpoint
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.property_animation_update_int16
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_create_blank_with_palette
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_get_bytes_per_row
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_get_data
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_set_bounds
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_set_data
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_sequence_create_with_resource
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_sequence_destroy
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_sequence_get_bitmap_size
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_sequence_get_current_frame_idx
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_sequence_get_total_num_frames
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_sequence_update_bitmap_next_frame
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_clone
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_get_delay
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_get_duration
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_get_play_count
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_get_elapsed
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_get_reverse
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_sequence_create
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_sequence_create_from_array
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_set_play_count
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_set_elapsed
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_set_reverse
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_spawn_create
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_spawn_create_from_array
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_get_curve
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_get_custom_curve
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.animation_get_implementation
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_sequence_get_play_count
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_sequence_restart
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_sequence_set_play_count
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.action_bar_layer_set_icon_animated
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_sequence_update_bitmap_by_elapsed
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.gbitmap_create_palettized_from_1bit
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.graphics_draw_rotated_bitmap
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.action_bar_layer_set_icon_press_animation
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_create
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_destroy
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_get_content_size
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.text_layer_get_layer
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.a(tmpN4as8bpebble.o)
- .text.text_layer_get_text
-                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/chalk/lib/libpebble.       0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
+                0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_get_layer
                 0x0000000000000000        0xc /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/aplite/lib/libpebble.a(tmp7jpKUopebble.o)
  .text.text_layer_get_text
@@ -2012,7 +2010,7 @@ DISCARD
  libm.a(*)
  libgcc.a(*)
  *(.eh_frame)
-OUTPUT(/Users/jonathan/Sites/Pebble-RSS-Reader-2/build/aplite/pebble-app.elf elf32-littlearm)
+OUTPUT(/Users/jonathan/Sites/Pebble-RSS-Reader/build/aplite/pebble-app.elf elf32-littlearm)
 
 .ARM.attributes
                 0x0000000000000000       0x27
@@ -2215,63 +2213,63 @@ OUTPUT(/Users/jonathan/Sites/Pebble-RSS-Reader-2/build/aplite/pebble-app.elf elf
  .debug_ranges  0x00000000000010f8      0x108 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
  .debug_ranges  0x0000000000001200       0xf8 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
 
-.debug_line     0x0000000000000000     0x3ca7
+.debug_line     0x0000000000000000     0x3c93
  .debug_line    0x0000000000000000       0xca src/main.c.42.o
- .debug_line    0x00000000000000ca      0x2fb src/simply/simply.c.42.o
- .debug_line    0x00000000000003c5      0x2f6 src/simply/simply_accel.c.42.o
- .debug_line    0x00000000000006bb      0x945 src/simply/simply_menu.c.42.o
- .debug_line    0x0000000000001000      0x544 src/simply/simply_msg.c.42.o
- .debug_line    0x0000000000001544      0x4cb src/simply/simply_res.c.42.o
- .debug_line    0x0000000000001a0f      0x247 src/simply/simply_splash.c.42.o
- .debug_line    0x0000000000001c56      0x7f3 src/simply/simply_stage.c.42.o
- .debug_line    0x0000000000002449      0x5f8 src/simply/simply_ui.c.42.o
- .debug_line    0x0000000000002a41       0x1d src/simply/simply_voice.c.42.o
- .debug_line    0x0000000000002a5e      0x33a src/simply/simply_wakeup.c.42.o
- .debug_line    0x0000000000002d98      0x5c9 src/simply/simply_window.c.42.o
- .debug_line    0x0000000000003361      0x397 src/simply/simply_window_stack.c.42.o
- .debug_line    0x00000000000036f8      0x13e aplite/appinfo.auto.c.42.o
- .debug_line    0x0000000000003836       0xcb aplite/src/resource_ids.auto.c.42.o
- .debug_line    0x0000000000003901       0x71 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_aeabi_ldivmod.o)
- .debug_line    0x0000000000003972       0x71 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(bpabi.o)
- .debug_line    0x00000000000039e3       0x6d /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0000000000003a50       0xef /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
- .debug_line    0x0000000000003b3f       0xd8 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
- .debug_line    0x0000000000003c17       0x90 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivsi3.o)
+ .debug_line    0x00000000000000ca      0x2f9 src/simply/simply.c.42.o
+ .debug_line    0x00000000000003c3      0x2f4 src/simply/simply_accel.c.42.o
+ .debug_line    0x00000000000006b7      0x943 src/simply/simply_menu.c.42.o
+ .debug_line    0x0000000000000ffa      0x542 src/simply/simply_msg.c.42.o
+ .debug_line    0x000000000000153c      0x4c9 src/simply/simply_res.c.42.o
+ .debug_line    0x0000000000001a05      0x247 src/simply/simply_splash.c.42.o
+ .debug_line    0x0000000000001c4c      0x7f1 src/simply/simply_stage.c.42.o
+ .debug_line    0x000000000000243d      0x5f6 src/simply/simply_ui.c.42.o
+ .debug_line    0x0000000000002a33       0x1d src/simply/simply_voice.c.42.o
+ .debug_line    0x0000000000002a50      0x338 src/simply/simply_wakeup.c.42.o
+ .debug_line    0x0000000000002d88      0x5c7 src/simply/simply_window.c.42.o
+ .debug_line    0x000000000000334f      0x395 src/simply/simply_window_stack.c.42.o
+ .debug_line    0x00000000000036e4      0x13e aplite/appinfo.auto.c.42.o
+ .debug_line    0x0000000000003822       0xcb aplite/src/resource_ids.auto.c.42.o
+ .debug_line    0x00000000000038ed       0x71 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_aeabi_ldivmod.o)
+ .debug_line    0x000000000000395e       0x71 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(bpabi.o)
+ .debug_line    0x00000000000039cf       0x6d /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0000000000003a3c       0xef /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
+ .debug_line    0x0000000000003b2b       0xd8 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
+ .debug_line    0x0000000000003c03       0x90 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivsi3.o)
 
-.debug_str      0x0000000000000000     0x5003
- .debug_str     0x0000000000000000      0x196 src/main.c.42.o
-                                        0x1d5 (size before relaxing)
- .debug_str     0x0000000000000196      0x4f6 src/simply/simply.c.42.o
-                                        0x772 (size before relaxing)
- .debug_str     0x000000000000068c      0x6e9 src/simply/simply_accel.c.42.o
-                                        0xa1a (size before relaxing)
- .debug_str     0x0000000000000d75     0x130f src/simply/simply_menu.c.42.o
-                                       0x1de0 (size before relaxing)
- .debug_str     0x0000000000002084      0x826 src/simply/simply_msg.c.42.o
-                                       0x1455 (size before relaxing)
- .debug_str     0x00000000000028aa      0x2fd src/simply/simply_res.c.42.o
-                                        0x6d9 (size before relaxing)
- .debug_str     0x0000000000002ba7       0xee src/simply/simply_splash.c.42.o
-                                        0x422 (size before relaxing)
- .debug_str     0x0000000000002c95      0xeb3 src/simply/simply_stage.c.42.o
-                                       0x1f13 (size before relaxing)
- .debug_str     0x0000000000003b48      0x45e src/simply/simply_ui.c.42.o
-                                       0x1624 (size before relaxing)
- .debug_str     0x0000000000003fa6       0x1d src/simply/simply_voice.c.42.o
-                                         0xfd (size before relaxing)
- .debug_str     0x0000000000003fc3      0x25c src/simply/simply_wakeup.c.42.o
-                                        0x98f (size before relaxing)
- .debug_str     0x000000000000421f      0x7b3 src/simply/simply_window.c.42.o
-                                       0x156e (size before relaxing)
- .debug_str     0x00000000000049d2      0x19c src/simply/simply_window_stack.c.42.o
-                                        0xb83 (size before relaxing)
- .debug_str     0x0000000000004b6e      0x222 aplite/appinfo.auto.c.42.o
-                                        0x31e (size before relaxing)
- .debug_str     0x0000000000004d90       0xd1 aplite/src/resource_ids.auto.c.42.o
-                                        0x19a (size before relaxing)
- .debug_str     0x0000000000004e61       0xdc /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(bpabi.o)
+.debug_str      0x0000000000000000     0x5001
+ .debug_str     0x0000000000000000      0x194 src/main.c.42.o
+                                        0x1d3 (size before relaxing)
+ .debug_str     0x0000000000000194      0x4f6 src/simply/simply.c.42.o
+                                        0x770 (size before relaxing)
+ .debug_str     0x000000000000068a      0x6e9 src/simply/simply_accel.c.42.o
+                                        0xa18 (size before relaxing)
+ .debug_str     0x0000000000000d73     0x130f src/simply/simply_menu.c.42.o
+                                       0x1dde (size before relaxing)
+ .debug_str     0x0000000000002082      0x826 src/simply/simply_msg.c.42.o
+                                       0x1453 (size before relaxing)
+ .debug_str     0x00000000000028a8      0x2fd src/simply/simply_res.c.42.o
+                                        0x6d7 (size before relaxing)
+ .debug_str     0x0000000000002ba5       0xee src/simply/simply_splash.c.42.o
+                                        0x420 (size before relaxing)
+ .debug_str     0x0000000000002c93      0xeb3 src/simply/simply_stage.c.42.o
+                                       0x1f11 (size before relaxing)
+ .debug_str     0x0000000000003b46      0x45e src/simply/simply_ui.c.42.o
+                                       0x1622 (size before relaxing)
+ .debug_str     0x0000000000003fa4       0x1d src/simply/simply_voice.c.42.o
+                                         0xfb (size before relaxing)
+ .debug_str     0x0000000000003fc1      0x25c src/simply/simply_wakeup.c.42.o
+                                        0x98d (size before relaxing)
+ .debug_str     0x000000000000421d      0x7b3 src/simply/simply_window.c.42.o
+                                       0x156c (size before relaxing)
+ .debug_str     0x00000000000049d0      0x19c src/simply/simply_window_stack.c.42.o
+                                        0xb81 (size before relaxing)
+ .debug_str     0x0000000000004b6c      0x222 aplite/appinfo.auto.c.42.o
+                                        0x31c (size before relaxing)
+ .debug_str     0x0000000000004d8e       0xd1 aplite/src/resource_ids.auto.c.42.o
+                                        0x198 (size before relaxing)
+ .debug_str     0x0000000000004e5f       0xdc /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(bpabi.o)
                                         0x10d (size before relaxing)
- .debug_str     0x0000000000004f3d       0xc6 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
+ .debug_str     0x0000000000004f3b       0xc6 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
                                         0x1da (size before relaxing)
  .debug_str     0x0000000000000000      0x1db /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
 
@@ -2292,72 +2290,3 @@ OUTPUT(/Users/jonathan/Sites/Pebble-RSS-Reader-2/build/aplite/pebble-app.elf elf
  .debug_frame   0x0000000000001194       0x38 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
  .debug_frame   0x00000000000011cc       0x38 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
  .debug_frame   0x0000000000001204       0x20 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivsi3.o)
-arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0000000000003d1c       0xef /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
- .debug_line    0x0000000000003e0b       0xd8 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
- .debug_line    0x0000000000003ee3       0x90 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivsi3.o)
-
-.debug_str      0x0000000000000000     0x54a8
- .debug_str     0x0000000000000000      0x190 src/main.c.38.o
-                                        0x1d5 (size before relaxing)
- .debug_str     0x0000000000000190      0x513 src/simply/simply.c.38.o
-                                        0x79b (size before relaxing)
- .debug_str     0x00000000000006a3      0x6e9 src/simply/simply_accel.c.38.o
-                                        0xa1a (size before relaxing)
- .debug_str     0x0000000000000d8c     0x130f src/simply/simply_menu.c.38.o
-                                       0x1de0 (size before relaxing)
- .debug_str     0x000000000000209b      0x841 src/simply/simply_msg.c.38.o
-                                       0x1470 (size before relaxing)
- .debug_str     0x00000000000028dc      0x2fd src/simply/simply_res.c.38.o
-                                        0x6d9 (size before relaxing)
- .debug_str     0x0000000000002bd9       0xee src/simply/simply_splash.c.38.o
-                                        0x422 (size before relaxing)
- .debug_str     0x0000000000002cc7      0xeb3 src/simply/simply_stage.c.38.o
-                                       0x1f13 (size before relaxing)
- .debug_str     0x0000000000003b7a      0x4c9 src/simply/simply_ui.c.38.o
-                                       0x168f (size before relaxing)
- .debug_str     0x0000000000004043      0x355 src/simply/simply_voice.c.38.o
-                                        0xacb (size before relaxing)
- .debug_str     0x0000000000004398      0x272 src/simply/simply_wakeup.c.38.o
-                                        0x9a5 (size before relaxing)
- .debug_str     0x000000000000460a      0x7ac src/simply/simply_window.c.38.o
-                                       0x15fc (size before relaxing)
- .debug_str     0x0000000000004db6      0x19c src/simply/simply_window_stack.c.38.o
-                                        0xb83 (size before relaxing)
- .debug_str     0x0000000000004f52      0x2e4 emery/appinfo.auto.c.38.o
-                                        0x3e0 (size before relaxing)
- .debug_str     0x0000000000005236       0xd0 emery/src/resource_ids.auto.c.38.o
-                                        0x199 (size before relaxing)
- .debug_str     0x0000000000005306       0xdc /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(bpabi.o)
-                                        0x10d (size before relaxing)
- .debug_str     0x00000000000053e2       0xc6 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
-                                        0x1da (size before relaxing)
- .debug_str     0x0000000000000000      0x1db /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
-
-.debug_frame    0x0000000000000000     0x12d0
- .debug_frame   0x0000000000000000       0x28 src/main.c.38.o
- .debug_frame   0x0000000000000028       0x40 src/simply/simply.c.38.o
- .debug_frame   0x0000000000000068       0xd0 src/simply/simply_accel.c.38.o
- .debug_frame   0x0000000000000138      0x394 src/simply/simply_menu.c.38.o
- .debug_frame   0x00000000000004cc      0x178 src/simply/simply_msg.c.38.o
- .debug_frame   0x0000000000000644      0x1e8 src/simply/simply_res.c.38.o
- .debug_frame   0x000000000000082c       0x9c src/simply/simply_splash.c.38.o
- .debug_frame   0x00000000000008c8      0x2a8 src/simply/simply_stage.c.38.o
- .debug_frame   0x0000000000000b70      0x1b4 src/simply/simply_ui.c.38.o
- .debug_frame   0x0000000000000d24       0xb0 src/simply/simply_voice.c.38.o
- .debug_frame   0x0000000000000dd4       0x7c src/simply/simply_wakeup.c.38.o
- .debug_frame   0x0000000000000e50      0x288 src/simply/simply_window.c.38.o
- .debug_frame   0x00000000000010d8      0x114 src/simply/simply_window_stack.c.38.o
- .debug_frame   0x00000000000011ec       0x54 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(bpabi.o)
- .debug_frame   0x0000000000001240       0x38 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
- .debug_frame   0x0000000000001278       0x38 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
- .debug_frame   0x00000000000012b0       0x20 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivsi3.o)
-   0x114 src/simply/simply_window_stack.c.40.o
- .debug_frame   0x0000000000001228       0x54 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(bpabi.o)
- .debug_frame   0x000000000000127c       0x38 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
- .debug_frame   0x00000000000012b4       0x38 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
- .debug_frame   0x00000000000012ec       0x20 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivsi3.o)
-pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(bpabi.o)
- .debug_frame   0x0000000000001240       0x38 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_divdi3.o)
- .debug_frame   0x0000000000001278       0x38 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivdi3.o)
- .debug_frame   0x00000000000012b0       0x20 /Users/jonathan/pebble-dev/pebble-sdk-4.5-mac/arm-cs-tools/bin/../lib/gcc/arm-none-eabi/4.7.2/thumb2/libgcc.a(_udivsi3.o)

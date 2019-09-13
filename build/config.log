@@ -1,13 +1,13 @@
-# project  configured on Fri Sep 13 13:18:45 2019 by
+# project  configured on Fri Sep 13 14:02:24 2019 by
 # waf 1.7.11 (abi 98, python 2070af0 on darwin)
 # using /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/sdk-core/pebble/waf configure
 #
 ----------------------------------------
 Setting top to
-/Users/jonathan/Sites/Pebble-RSS-Reader-2
+/Users/jonathan/Sites/Pebble-RSS-Reader
 ----------------------------------------
 Setting out to
-/Users/jonathan/Sites/Pebble-RSS-Reader-2/build
+/Users/jonathan/Sites/Pebble-RSS-Reader/build
 ----------------------------------------
 Checking for program webpack
 /Users/jonathan/Library/Application Support/Pebble SDK/SDKs/current/node_modules/.bin/webpack
