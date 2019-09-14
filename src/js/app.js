@@ -2,6 +2,7 @@
 var UI = require('ui');
 var ajax = require('ajax');
 var Settings = require('settings');
+var Feature = require('platform/feature');
 
 var blackStatusBar = {
 	color: "white",
@@ -78,7 +79,12 @@ function getArticles(feed) {
 	loadingCard = new UI.Card({status: blackStatusBar});
 	loadingCard.title(" ");
 	loadingCard.subtitle(" ");
-	loadingCard.body("        Loading...");
+	if (Feature.round()) {
+		loadingCard.body("Loading..."); //This should get centered automatically on the Round.
+	}
+	else {
+		loadingCard.body("        Loading...");
+	}
 	loadingCard.show();
 	articleList = [];
 	jsonUrl = "https://api.rss2json.com/v1/api.json?rss_url=" + feed.url;
@@ -134,23 +140,35 @@ function makePages(content) {
 
 	pages = [];
 	for (paragraphNum = 0; paragraphNum < paragraphs.length; paragraphNum++) {
-		if (paragraphNum === 0) {
-			// The first page is allowed be much longer. However, PebbleJS exhibits odd behavior once page length nears ~2,000 characters.
-			pages = processParagraphs(pages, 1800, paragraphs[paragraphNum]);
+		if (! Feature.round()) {
+			if (paragraphNum === 0) {
+				// The first page is allowed be much longer on square devices. However, PebbleJS exhibits odd behavior once page length nears ~2,000 characters.
+				pages = processParagraphs(pages, 1800, 0, paragraphs[paragraphNum]);
+			}
+			else {
+				// Whatever number you choose for maxCharsPerPage will never be ideal for all pages, due to line wrapping and variable width characters.
+				pages = processParagraphs(pages, 80, 45, paragraphs[paragraphNum]);
+			}
 		}
 		else {
-			// Whatever number you choose for maxCharsPerPage will never be ideal for all pages, due to line wrapping and variable width characters.
-			pages = processParagraphs(pages, 80, paragraphs[paragraphNum]);
+			if (paragraphNum === 0) {
+				// On the round, make first page only include title and author.
+				pages = processParagraphs(pages, 0, 0, paragraphs[paragraphNum]);
+			}
+			else {
+				// Time round cannot display as many characters.
+				pages = processParagraphs(pages, 65, 0, paragraphs[paragraphNum]);
+			}
 		}
 	}
 	return pages;
 }
 
-function processParagraphs(pageArr, maxCharsPerPage, content) {
+function processParagraphs(pageArr, maxCharsPerPage, maxCharsExtension, content) {
 	firstPart = content.substring(0, maxCharsPerPage);
 	laterPart = content.substring(maxCharsPerPage);
 
-	if (laterPart.length > 45) { //Not "0" to prevent short widow pages at the end of paragraphs, at the cost of greatly increasing likelihood of font shrinkage.
+	if (laterPart.length > maxCharsExtension) { //maxCharsExtension prevents short widow pages at the end of paragraphs, at cost of more font shrinkage.
 
 		//Prevent page split from occurring mid-word.
 		firstPart = firstPart.split(" ");
@@ -163,7 +181,7 @@ function processParagraphs(pageArr, maxCharsPerPage, content) {
 		laterPart = "‹" + String.fromCharCode(160) + laterPart;
 
 		pageArr.push(firstPart);
-		pageArr.concat(processParagraphs(pageArr, maxCharsPerPage, laterPart));
+		pageArr.concat(processParagraphs(pageArr, maxCharsPerPage, maxCharsExtension, laterPart));
 	}
   	else {
   		pageArr.push(content);
