@@ -132,7 +132,7 @@ function getArticles(feed) {
 }
 
 function makePages(content) {
-	paragraphs = content.split(/<\/p>|[\r\n\t\f\v]+/gim);
+	paragraphs = content.split(/<\/p>|<br>|[\r\n\t\f\v]+/gim);
 	for (paragraphNum = 0; paragraphNum < paragraphs.length; paragraphNum++) {
 		paragraphs[paragraphNum] = formatText(paragraphs[paragraphNum]);
 	}
@@ -152,7 +152,7 @@ function makePages(content) {
 		}
 		else {
 			if (paragraphNum === 0) {
-				// On the round, make first page only include title and author.
+				// On the round, make first page only include title and author on first page.
 				pages = processParagraphs(pages, 0, 0, paragraphs[paragraphNum]);
 			}
 			else {
@@ -172,14 +172,19 @@ function processParagraphs(pageArr, maxCharsPerPage, maxCharsExtension, content)
 
 		//Prevent page split from occurring mid-word.
 		firstPart = firstPart.split(" ");
-		afterLastSpace = firstPart[ firstPart.length - 1 ];
-		laterPart = afterLastSpace + laterPart;
-		firstPart.pop(); //remove afterLastSpace from firstPart
-		firstPart = firstPart.join(' ');
-
-		firstPart = firstPart + String.fromCharCode(160) + "›";
-		laterPart = "‹" + String.fromCharCode(160) + laterPart;
-
+		//console.log(firstPart);
+		if (firstPart.length > 1) {
+			afterLastSpace = firstPart[ firstPart.length - 1 ];
+			laterPart = afterLastSpace + laterPart;
+			firstPart.pop(); //remove afterLastSpace from firstPart
+			firstPart = firstPart.join(' ');
+	
+			firstPart = firstPart + String.fromCharCode(160) + "›";
+			laterPart = "‹" + String.fromCharCode(160) + laterPart; 
+		}
+		else {
+			firstPart = firstPart[0] + "..." + String.fromCharCode(160) + "›";
+		}
 		pageArr.push(firstPart);
 		pageArr.concat(processParagraphs(pageArr, maxCharsPerPage, maxCharsExtension, laterPart));
 	}
@@ -195,34 +200,31 @@ function formatText(text) {
 		return "";
 	}
 	else {
-		text = text.replace(/<br>/g, "\n");
+		text = text.replace(/<caption.*?>.*?<\/caption>/gi, "");
+		text = text.replace(/<figcaption.*?>.*?<\/figcaption>/gi, "");
+		text = text.replace(/<small.*?>.*?<\/small>/gi, "");
+		text = text.replace(/<cite.*?>.*?<\/cite>/gi, "");
 
-		text = text.replace(/<caption.*?>.*?<\/caption>/g, "");
-		text = text.replace(/<figcaption.*?>.*?<\/figcaption>/g, "");
-		text = text.replace(/<small.*?>.*?<\/small>/g, "");
-		text = text.replace(/<cite.*?>.*?<\/cite>/g, "");
+		text = text.replace(/<.*? .*?class=".*?caption.*?".*?>.*?<\/.*?>/gi, "");
+		text = text.replace(/<.*? .*?class=".*?credit.*?".*?>.*?<\/.*?>/gi, "");
+		text = text.replace(/<.*? .*?data-id="injected-recirculation-link".*?>.*?<\/.*?>/gi, "");
+		text = text.replace(/<[^>]*>/gi, ''); //Remove html tags.
+		text = text.replace(/[ ]{2,}/gi, ' '); //Remove multiple spaces
+		text = text.replace(/&nbsp;/gi, " ");
 
-		text = text.replace(/<.*? .*?class=".*?caption.*?".*?>.*?<\/.*?>/g, "");
-		text = text.replace(/<.*? .*?class=".*?credit.*?".*?>.*?<\/.*?>/g, "");
-		text = text.replace(/<.*? .*?data-id="injected-recirculation-link".*?>.*?<\/.*?>/g, "");
+		text = text.replace(/&quot;/gi, '"');
+		text = text.replace(/&[lr]dquo;/gi, '"');
+		text = text.replace(/&[lr]squo;/gi, "'");
 
-		text = text.replace(/<[^>]*>/g, ''); //Remove html tags.
-		text = text.replace(/[ ]{2,}/g, ' '); //Remove multiple spaces
-		text = text.replace(/&nbsp;/g, " ");
+		text = text.replace(/&mdash;/gi, "—");
+		text = text.replace(/&ndash;/gi, "–");
 
-		text = text.replace(/&quot;/g, '"');
-		text = text.replace(/&[lr]dquo;/g, '"');
-		text = text.replace(/&[lr]squo;/g, "'");
+		text = text.replace(/&hellip;/gi, "…");
 
-		text = text.replace(/&mdash;/g, "—");
-		text = text.replace(/&ndash;/g, "–");
+		text = text.replace(/&gt;/gi, '>');
+		text = text.replace(/&lt;/gi, '<');
 
-		text = text.replace(/&hellip;/g, "…");
-
-		text = text.replace(/&gt;/g, '>');
-		text = text.replace(/&lt;/g, '<');
-
-		text = text.replace(/&amp;/g, "&");
+		text = text.replace(/&amp;/gi, "&");
 
 		text = text.replace(/^[<>[\]]*$/g,'');
 		text = text.replace(/^Advertisement$/g,'');
