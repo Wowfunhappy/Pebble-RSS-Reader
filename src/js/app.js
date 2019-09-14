@@ -153,11 +153,11 @@ function makePages(content) {
 		else {
 			if (paragraphNum === 0) {
 				// On the round, make first page only include title and author on first page.
-				pages = processParagraphs(pages, 0, 0, paragraphs[paragraphNum]);
+				pages = processParagraphs(pages, 72, 0, paragraphs[paragraphNum]);
 			}
 			else {
 				// Time round cannot display as many characters.
-				pages = processParagraphs(pages, 65, 0, paragraphs[paragraphNum]);
+				pages = processParagraphs(pages, 72, 0, paragraphs[paragraphNum]);
 			}
 		}
 	}
