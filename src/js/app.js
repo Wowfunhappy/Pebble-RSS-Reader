@@ -74,13 +74,14 @@ function selectFeed()
 	});
 }
 
+var getArticlesShouldCancel;
 function getArticles(feed) {
-	var shouldCancel = false;
+	getArticlesShouldCancel = false;
 	loadingCard = new UI.Card({status: blackStatusBar});
 	loadingCard.title(" ");
 	loadingCard.subtitle(" ");
 	if (Feature.round()) {
-		loadingCard.body("Loading..."); //This should get centered automatically on the Round.
+		loadingCard.body("Loading..."); //This will get centered automatically on the Round.
 	}
 	else {
 		loadingCard.body("        Loading...");
@@ -97,7 +98,7 @@ function getArticles(feed) {
 
 	ajax({ url: jsonUrl }, function(json) {
 		json = JSON.parse(json);
-		if (json.status === "ok" && !shouldCancel) {
+		if (json.status === "ok") {
 			items = json.items; 
 			items.forEach(function(item) {
 				article = {
@@ -107,7 +108,7 @@ function getArticles(feed) {
 				};
 				articleList.push(article);
 				if (articleList.length === json.items.length) {
-					if (! shouldCancel) {
+					if (! getArticlesShouldCancel) {
 						selectArticle(articleList, feed.title);
 					}
 					loadingCard.hide();
@@ -124,10 +125,6 @@ function getArticles(feed) {
 			}
 			problemCard.show();
 		}
-	});
-	loadingCard.on('click', 'back', function() {
-		/* User returned to menu while article was loading. */
-		shouldCancel = true;
 	});
 }
 
@@ -152,12 +149,11 @@ function makePages(content) {
 		}
 		else {
 			if (paragraphNum === 0) {
-				// On the round, make first page only include title and author on first page.
 				pages = processParagraphs(pages, 1800, 0, paragraphs[paragraphNum]);
 			}
 			else {
 				// Time round cannot display as many characters.
-				pages = processParagraphs(pages, 72, 0, paragraphs[paragraphNum]);
+				pages = processParagraphs(pages, 68, 0, paragraphs[paragraphNum]);
 			}
 		}
 	}
@@ -172,18 +168,18 @@ function processParagraphs(pageArr, maxCharsPerPage, maxCharsExtension, content)
 
 		//Prevent page split from occurring mid-word.
 		firstPart = firstPart.split(" ");
-		//console.log(firstPart);
-		if (firstPart.length > 1) {
+		if (firstPart.length > 1) { //If firstPart contains a space.
 			afterLastSpace = firstPart[ firstPart.length - 1 ];
 			laterPart = afterLastSpace + laterPart;
 			firstPart.pop(); //remove afterLastSpace from firstPart
 			firstPart = firstPart.join(' ');
 	
-			firstPart = firstPart + String.fromCharCode(160) + "›";
+			firstPart = firstPart + String.fromCharCode(160) + "›"; // CharCode 160 is a nonbreaking space.
 			laterPart = "‹" + String.fromCharCode(160) + laterPart; 
 		}
 		else {
-			firstPart = firstPart[0] + "..." + String.fromCharCode(160) + "›";
+			firstPart = firstPart[0] + "…" + String.fromCharCode(160) + "›";
+			laterPart = "…" + laterPart;
 		}
 		pageArr.push(firstPart);
 		pageArr.concat(processParagraphs(pageArr, maxCharsPerPage, maxCharsExtension, laterPart));
