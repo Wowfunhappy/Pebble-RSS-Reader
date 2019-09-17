@@ -40,12 +40,11 @@ var defaultFeeds = [{
 	}];
 
 Settings.config({url: 'https://wowfunhappy.github.io/Pebble-RSS-Reader/', hash: true}, function(){
-	console.log("opened configurable");
 	if (typeof Settings.option().feeds === 'undefined' || Settings.option().feeds.length < 1) {
 		Settings.option("feeds", defaultFeeds);
 	}
 }, function(){
-	console.log("closed configurable");
+	feedSelectMenu.hide(); // Will likely close app
 });
 
 /*-----------------------------------------------------------------------------*/
@@ -142,46 +141,50 @@ function makePages(content) {
 	for (paragraphNum = 0; paragraphNum < paragraphs.length; paragraphNum++) {
 		if (paragraphNum === 0) {
 			// The first page is allowed be much longer. However, PebbleJS exhibits odd behavior once page length nears ~2,000 characters.
-			pages = processParagraphs(pages, 1800, 0, paragraphs[paragraphNum]);
+			pages = splitTextCleanly(pages, 1800, 0, true, paragraphs[paragraphNum]);
 		}
 		else {
 			if (! Feature.round()) {
 				// Whatever number you choose for maxCharsPerPage will never be ideal for all pages, due to line wrapping and variable width characters.
-				pages = processParagraphs(pages, 80, 45, paragraphs[paragraphNum]);
+				pages = splitTextCleanly(pages, 80, 45, true, paragraphs[paragraphNum]);
 			}
 			else {
 				// Time round cannot display as many characters.
-				pages = processParagraphs(pages, 68, 0, paragraphs[paragraphNum]);
+				pages = splitTextCleanly(pages, 68, 0, true, paragraphs[paragraphNum]);
 			}
 		}
 	}
 	return pages;
 }
 
-function processParagraphs(pageArr, maxCharsPerPage, maxCharsExtension, content) {
+function splitTextCleanly(pageArr, maxCharsPerPage, maxCharsExtension, includeContinuedIndicator, content) {
 	firstPart = content.substring(0, maxCharsPerPage);
 	laterPart = content.substring(maxCharsPerPage);
 
 	if (laterPart.length > maxCharsExtension) { //maxCharsExtension prevents short widow pages at the end of paragraphs, at cost of more font shrinkage.
 
 		//Prevent page split from occurring mid-word.
-		firstPart = firstPart.split(" ");
+		firstPart = firstPart.split(/( |-|–|—)+/);
 		if (firstPart.length > 1) { //If firstPart contains a space.
 			afterLastSpace = firstPart[ firstPart.length - 1 ];
 			laterPart = afterLastSpace + laterPart;
 			firstPart.pop(); //remove afterLastSpace from firstPart
-			firstPart = firstPart.join(' ');
+			firstPart = firstPart.join('');
+			firstPart = firstPart.substring(0, firstPart.length -1) //remove trailing space from firstPart
 	
-			firstPart = firstPart + String.fromCharCode(160) + "›"; // CharCode 160 is a nonbreaking space.
-			laterPart = "‹" + String.fromCharCode(160) + laterPart; 
+			if (includeContinuedIndicator) {
+				firstPart = firstPart + String.fromCharCode(160) + "›"; // CharCode 160 is a nonbreaking space.
+				console.log(firstPart);
+				laterPart = "‹" + String.fromCharCode(160) + laterPart;
+			}
 		}
 		else {
 			//There are no spaces.
-			firstPart = firstPart[0] + "…" + String.fromCharCode(160) + "›";
+			firstPart = firstPart[0] + "…";
 			laterPart = "…" + laterPart;
 		}
 		pageArr.push(firstPart);
-		pageArr.concat(processParagraphs(pageArr, maxCharsPerPage, maxCharsExtension, laterPart));
+		pageArr.concat(splitTextCleanly(pageArr, maxCharsPerPage, maxCharsExtension, includeContinuedIndicator, laterPart));
 	}
   	else {
   		pageArr.push(content);
@@ -234,11 +237,23 @@ function formatText(text) {
 
 var articleSelectMenu = {};
 function selectArticle(articleList, heading) {
+
+	articleDisplayTitles = [];
+	for (i = 0; i < articleList.length; i++) {
+		currTitle = [];
+		splitTextCleanly(currTitle, 17, 0, false, articleList[i].title);
+
+		articleDisplayTitles.push({
+			title: currTitle[0],
+			subtitle: currTitle.slice(1, currTitle.length).join(' ')
+		});
+	}
+
 	articleSelectMenu = new UI.Menu({
 		status: false,
 		sections: [{
 			title: heading,
-			items: articleList
+			items: articleDisplayTitles
 		},
 		{
 			title: " –––––––––––––––",
@@ -321,7 +336,7 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 }
 
 function removeOldPages() {
-	if (articlePageHistory.length > 1) {
+	if (articlePageHistory.length > 0) {
 		for (i = 0; i < articlePageHistory.length; i++) {
 			articlePageHistory[i].hide();
 		}
