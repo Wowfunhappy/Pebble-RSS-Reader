@@ -23,6 +23,9 @@ var defaultFeeds = [{
 	title: "Time Magazine",
 	url: "http://feeds2.feedburner.com/time/topstories"
 	},{
+	title: "ProPublica",
+	url: "http://feeds.propublica.org/propublica/main"
+	},{
 	title: "The Verge",
 	url: "https://www.theverge.com/rss/full.xml"
 	},{
@@ -32,8 +35,8 @@ var defaultFeeds = [{
 	title: "SBNation",
 	url: "http://feeds.feedburner.com/sportsblogs/sbnation.xml"
 	},{
-	title: "Eater",
-	url: "https://www.eater.com/rss/full.xml"
+	title: "Curbed",
+	url: "https://www.curbed.com/rss/full.xml"
 	}];
 
 Settings.config({url: 'https://wowfunhappy.github.io/Pebble-RSS-Reader/', hash: true}, function(){
@@ -137,19 +140,14 @@ function makePages(content) {
 
 	pages = [];
 	for (paragraphNum = 0; paragraphNum < paragraphs.length; paragraphNum++) {
-		if (! Feature.round()) {
-			if (paragraphNum === 0) {
-				// The first page is allowed be much longer on square devices. However, PebbleJS exhibits odd behavior once page length nears ~2,000 characters.
-				pages = processParagraphs(pages, 1800, 0, paragraphs[paragraphNum]);
-			}
-			else {
-				// Whatever number you choose for maxCharsPerPage will never be ideal for all pages, due to line wrapping and variable width characters.
-				pages = processParagraphs(pages, 80, 45, paragraphs[paragraphNum]);
-			}
+		if (paragraphNum === 0) {
+			// The first page is allowed be much longer. However, PebbleJS exhibits odd behavior once page length nears ~2,000 characters.
+			pages = processParagraphs(pages, 1800, 0, paragraphs[paragraphNum]);
 		}
 		else {
-			if (paragraphNum === 0) {
-				pages = processParagraphs(pages, 1800, 0, paragraphs[paragraphNum]);
+			if (! Feature.round()) {
+				// Whatever number you choose for maxCharsPerPage will never be ideal for all pages, due to line wrapping and variable width characters.
+				pages = processParagraphs(pages, 80, 45, paragraphs[paragraphNum]);
 			}
 			else {
 				// Time round cannot display as many characters.
@@ -178,6 +176,7 @@ function processParagraphs(pageArr, maxCharsPerPage, maxCharsExtension, content)
 			laterPart = "‹" + String.fromCharCode(160) + laterPart; 
 		}
 		else {
+			//There are no spaces.
 			firstPart = firstPart[0] + "…" + String.fromCharCode(160) + "›";
 			laterPart = "…" + laterPart;
 		}
@@ -199,6 +198,7 @@ function formatText(text) {
 		text = text.replace(/<caption.*?>.*?<\/caption>/gi, "");
 		text = text.replace(/<figcaption.*?>.*?<\/figcaption>/gi, "");
 		text = text.replace(/<small.*?>.*?<\/small>/gi, "");
+		text = text.replace(/<aside.*?>.*?<\/aside>/gi, "");
 		text = text.replace(/<cite.*?>.*?<\/cite>/gi, "");
 
 		text = text.replace(/<.*? .*?class=".*?caption.*?".*?>.*?<\/.*?>/gi, "");
@@ -212,8 +212,9 @@ function formatText(text) {
 		text = text.replace(/&[lr]dquo;/gi, '"');
 		text = text.replace(/&[lr]squo;/gi, "'");
 
-		text = text.replace(/&mdash;/gi, "—");
 		text = text.replace(/&ndash;/gi, "–");
+		text = text.replace(/&mdash;/gi, "—");
+		text = text.replace(/—/gi, String.fromCharCode(8203) + "—" + String.fromCharCode(8203)); //Insert zero width spaces before and after mdash's, to allow line breaks.
 
 		text = text.replace(/&hellip;/gi, "…");
 
@@ -267,8 +268,13 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 	if (pageNum === 0) {
 		articleCard.scrollable(true);
 		articleCard.title(article.title);
-		if (article.author) {
-			articleCard.subtitle("by " + article.author);
+		if (article.author && article.pages[0].indexOf(article.author) === -1) { //If the article has an author which isn't repeated in the first page of the body
+			if (article.author.lastIndexOf("by ") === 0) { //If the article's author string starts with "by "
+				articleCard.subtitle(article.author);
+			}
+			else {
+				articleCard.subtitle("by " + article.author);
+			}
 		}
 		articleCard.body(article.pages[pageNum]);
 		if (pageNum < article.pages.length - 1) {
