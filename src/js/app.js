@@ -150,7 +150,7 @@ function makePages(content) {
 			}
 			else {
 				// Time round cannot display as many characters.
-				pages = splitTextCleanly(pages, 68, 0, true, paragraphs[paragraphNum]);
+				pages = splitTextCleanly(pages, 72, 0, true, paragraphs[paragraphNum]);
 			}
 		}
 	}
@@ -242,14 +242,19 @@ var articleSelectMenu = {};
 function selectArticle(articleList, heading) {
 
 	articleDisplayTitles = [];
-	for (i = 0; i < articleList.length; i++) {
-		currTitle = [];
-		splitTextCleanly(currTitle, 17, 0, false, articleList[i].title);
+	if (! Feature.round()) {
+		for (i = 0; i < articleList.length; i++) {
+			currTitle = [];
+			splitTextCleanly(currTitle, 17, 0, false, articleList[i].title);
 
-		articleDisplayTitles.push({
-			title: currTitle[0],
-			subtitle: currTitle.slice(1, currTitle.length).join(' ')
-		});
+			articleDisplayTitles.push({
+				title: currTitle[0],
+				subtitle: currTitle.slice(1, currTitle.length).join(' ')
+			});
+		}
+	}
+	else {
+		articleDisplayTitles = articleList;
 	}
 
 	articleSelectMenu = new UI.Menu({
