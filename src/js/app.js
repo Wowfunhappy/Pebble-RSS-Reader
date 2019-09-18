@@ -164,24 +164,27 @@ function splitTextCleanly(pageArr, maxCharsPerPage, maxCharsExtension, includeCo
 	if (laterPart.length > maxCharsExtension) { //maxCharsExtension prevents short widow pages at the end of paragraphs, at cost of more font shrinkage.
 
 		//Prevent page split from occurring mid-word.
-		firstPart = firstPart.split(/( |-|–|—)+/);
+		firstPart = firstPart.split(' ');
 		if (firstPart.length > 1) { //If firstPart contains a space.
 			afterLastSpace = firstPart[ firstPart.length - 1 ];
 			laterPart = afterLastSpace + laterPart;
 			firstPart.pop(); //remove afterLastSpace from firstPart
-			firstPart = firstPart.join('');
-			firstPart = firstPart.substring(0, firstPart.length -1) //remove trailing space from firstPart
+			firstPart = firstPart.join(' ');
 	
 			if (includeContinuedIndicator) {
 				firstPart = firstPart + String.fromCharCode(160) + "›"; // CharCode 160 is a nonbreaking space.
-				console.log(firstPart);
 				laterPart = "‹" + String.fromCharCode(160) + laterPart;
 			}
 		}
 		else {
 			//There are no spaces.
-			firstPart = firstPart[0] + "…";
-			laterPart = "…" + laterPart;
+			if (includeContinuedIndicator) {
+				firstPart = firstPart[0] + "…";
+				laterPart = "…" + laterPart;
+			}
+			else {
+				firstPart = firstPart[0];
+			}
 		}
 		pageArr.push(firstPart);
 		pageArr.concat(splitTextCleanly(pageArr, maxCharsPerPage, maxCharsExtension, includeContinuedIndicator, laterPart));
