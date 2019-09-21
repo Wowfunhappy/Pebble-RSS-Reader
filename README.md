@@ -1,9 +1,10 @@
-# Pebble-RSS-Reader
-A full-text RSS Reader for the Pebble Smartwatch
+![Banner](https://github.com/Wowfunhappy/Pebble-RSS-Reader/raw/master/Banner.png)
 
 Hands full? No problem! As long as you have a Pebble smartwatch and at least one free finger, you can read the news—no pulling out your phone required.
 
 _Pebble RSS Reader_ is the _only_ way to read complete news articles, blog posts, or anything else with an RSS feed on your Pebble smartwatch. An unlimited number of feeds are supported, as are articles of any length. Peruse the default feeds, or add your own in Settings.
+
+*Coming Soon to the Rebble App Store...*
 
 ---
 
