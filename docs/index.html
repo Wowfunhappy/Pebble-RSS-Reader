@@ -116,9 +116,15 @@
         feeds.push(feed);
       }
     }
+    
+    rss2jsonApiKey = document.getElementById("rss2jsonApiKey").value
+    if (rss2jsonApiKey === "") {
+      rss2jsonApiKey = undefined;
+    }
+    
     document.location = 'pebblejs://close#' + encodeURIComponent(JSON.stringify({
       feeds: feeds,
-      rss2jsonApiKey: document.getElementById("rss2jsonApiKey").value
+      rss2jsonApiKey: rss2jsonApiKey
     }));
   }
 
