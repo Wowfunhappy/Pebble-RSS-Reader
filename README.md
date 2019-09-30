@@ -4,7 +4,7 @@ Hands full? No problem! As long as you have a Pebble smartwatch and at least one
 
 _Pebble RSS Reader_ is the _only_ way to read complete news articles, blog posts, or anything else with an RSS feed on your Pebble smartwatch. An unlimited number of feeds are supported, as are articles of any length. Peruse the default feeds, or add your own in Settings.
 
-*Coming Soon to the Rebble App Store...*
+***[Download Now on the Appstore!](https://apps.rebble.io/en_US/application/5d8d503bc393f5215a13e5e6)***
 
 ---
 
