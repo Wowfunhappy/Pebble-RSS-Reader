@@ -386,7 +386,8 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 			articlePageHistory.pop();
 			this.hide();
 			
-			if (!articleSelectMenuExists && articlePageHistory.length <= 1) {
+			if (articlePageHistory.length <= 1) {
+				//Previous page is not in stack.
 				if (pageNum > 0) {
 					displayArticlePage(articleList, articleNum, pageNum - 1);
 				}
