@@ -392,7 +392,14 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 					displayArticlePage(articleList, articleNum, pageNum - 1);
 				}
 				else {
-					getArticles(Settings.data('savedFeed'));	
+					if (articleSelectMenuExists) {
+						articleSelectMenu.show();
+						articleSelectMenu.selection(0, articleNum); //Note: will select wrong story if feed updated since article was saved.
+					}
+					else {
+						getArticles(Settings.data('savedFeed'));	
+					}
+
 				}
 			}
 		}
