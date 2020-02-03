@@ -49,10 +49,32 @@ Settings.config({url: 'https://wowfunhappy.github.io/Pebble-RSS-Reader/', hash: 
 
 /*-----------------------------------------------------------------------------*/
 
-selectFeed();
+var articlePageHistory = [];
+var articleSelectMenuExists = false;
 
-function selectFeed()
-{
+selectFeed();
+if (allSavedInfoExists()) {
+	displayArticlePage(Settings.data('savedArticleList'), Settings.data('savedArticleNum'), Settings.data('savedPageNum'));
+	removeSavedInfo();
+}
+
+function removeSavedInfo() {
+	Settings.data('savedArticleList', undefined);
+	Settings.data('savedArticleNum', undefined);
+	Settings.data('savedPageNum', undefined);
+	//savedFeed is NOT removed!
+}
+
+function allSavedInfoExists() {
+	if (typeof Settings.data('savedFeed') === 'undefined' || typeof Settings.data('savedArticleList') === 'undefined' || typeof Settings.data('savedArticleNum') === 'undefined' || typeof Settings.data('savedPageNum') === 'undefined') {
+		return false;
+	}
+	else {
+		return true;
+	}
+}
+
+function selectFeed() {
 	/*Overwrite default feeds with what user input in Settings.*/
 	if (typeof Settings.option().feeds !== 'undefined' && Settings.option().feeds.length > 0) {
 		feeds = Settings.option().feeds;
@@ -74,6 +96,10 @@ function selectFeed()
 	feedSelectMenu.on('select', function(e) {
 		getArticles(feeds[e.itemIndex]);
 	});
+	
+	feedSelectMenu.on('show', function() {
+		removeSavedInfo();
+	});
 }
 
 var loadingCardVisible;
@@ -89,6 +115,9 @@ function getArticles(feed) {
 	}
 	loadingCard.show();
 	loadingCardVisible = true;
+	
+	Settings.data('savedFeed', feed);
+	
 	articleList = [];
 	jsonUrl = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feed.url);
 
@@ -244,7 +273,6 @@ function formatText(text) {
 
 var articleSelectMenu = {};
 function selectArticle(articleList, heading) {
-
 	articleDisplayTitles = [];
 	if (! Feature.round()) {
 		for (i = 0; i < articleList.length; i++) {
@@ -276,19 +304,24 @@ function selectArticle(articleList, heading) {
 	});
 
 	articleSelectMenu.show();
+	articleSelectMenuExists = true;
+	removeSavedInfo();
 
 	articleSelectMenu.on("select", function(e) {
 		removeOldPages();
-		if (e.sectionIndex === 0) {
+		if (e.sectionIndex === 0) {			
 			displayArticlePage(articleList, e.itemIndex, 0);
 		}
 		else {
 			articleSelectMenu.hide();
 		}
 	});
+	
+	articleSelectMenu.on('show', function() {
+		removeSavedInfo();
+	});
 }
 
-var articlePageHistory = [];
 function displayArticlePage(articleList, articleNum, pageNum) {
 	article = articleList[articleNum];
 	articleCard = new UI.Card({status: blackStatusBar});
@@ -327,24 +360,54 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 
 	articleCard.show();
 	articlePageHistory.push(articleCard);
-
+	
+	articleCard.on('show', function() {
+		Settings.data('savedArticleList', articleList);
+		Settings.data('savedArticleNum', articleNum);
+		Settings.data('savedPageNum', pageNum);
+	});
+	
 	articleCard.on('click', function(e) {
 		if (e.button === 'select' || e.button === 'down') {
 			if (pageNum < article.pages.length - 1) {
 				displayArticlePage(articleList, articleNum, pageNum + 1);
 			}
 			else {
-				articleSelectMenu.show();
-				articleSelectMenu.selection(0, articleNum + 1);
+				if (articleSelectMenuExists) {
+					articleSelectMenu.show();
+					articleSelectMenu.selection(0, articleNum + 1);
+				}
+				else {
+					getArticles(Settings.data('savedFeed'));
+				}
 			}
 		}
 		if (e.button === 'up' || e.button === 'back') {
+			articlePageHistory.pop();
 			this.hide();
+			
+			if (!articleSelectMenuExists && articlePageHistory.length <= 1) {
+				if (pageNum > 0) {
+					displayArticlePage(articleList, articleNum, pageNum - 1);
+				}
+				else {
+					getArticles(Settings.data('savedFeed'));	
+				}
+			}
 		}
 	});
 	articleCard.on('longClick', 'select', function() {
-		articleSelectMenu.show();
+		if (articleSelectMenuExists) {
+			articleSelectMenu.show();
+		}
+		else {
+			getArticles(Settings.data('savedFeed'));	
+		}
 	});
+	
+	//Hack to fix PebbleJS bug. (Overrides back button so I can handle it above.)
+	articleCard.on('click', 'back', function(){});
+	articleCard.on('longClick', 'back', function(){});
 }
 
 function removeOldPages() {
