@@ -52,6 +52,8 @@ Settings.config({url: 'https://wowfunhappy.github.io/Pebble-RSS-Reader/', hash: 
 var articlePageHistory = [];
 var articleSelectMenuExists = false;
 
+console.log("Saved data: " + Settings.data('savedArticleList') + Settings.data('savedArticleNum') + Settings.data('savedPageNum'));
+
 selectFeed();
 if (allSavedInfoExists()) {
 	displayArticlePage(Settings.data('savedArticleList'), Settings.data('savedArticleNum'), Settings.data('savedPageNum'));
@@ -361,10 +363,9 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 	articleCard.show();
 	articlePageHistory.push(articleCard);
 	
+	saveCurrPage(articleList, articleNum, pageNum);
 	articleCard.on('show', function() {
-		Settings.data('savedArticleList', articleList);
-		Settings.data('savedArticleNum', articleNum);
-		Settings.data('savedPageNum', pageNum);
+		saveCurrPage(articleList, articleNum, pageNum);
 	});
 	
 	articleCard.on('click', function(e) {
@@ -375,7 +376,7 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 			else {
 				if (articleSelectMenuExists) {
 					articleSelectMenu.show();
-					articleSelectMenu.selection(0, articleNum + 1);
+					articleSelectMenu.selection(0, articleNum + 1); //Note: will select wrong story if feed updated since article was saved.
 				}
 				else {
 					getArticles(Settings.data('savedFeed'));
@@ -394,7 +395,7 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 				else {
 					if (articleSelectMenuExists) {
 						articleSelectMenu.show();
-						articleSelectMenu.selection(0, articleNum); //Note: will select wrong story if feed updated since article was saved.
+						//articleSelectMenu.selection(0, articleNum); //Note: will select wrong story if feed updated since article was saved.
 					}
 					else {
 						getArticles(Settings.data('savedFeed'));	
@@ -416,6 +417,12 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 	//Hack to fix PebbleJS bug. (Overrides back button so I can handle it above.)
 	articleCard.on('click', 'back', function(){});
 	articleCard.on('longClick', 'back', function(){});
+}
+
+function saveCurrPage(articleList, articleNum, pageNum) {
+		Settings.data('savedArticleList', articleList);
+		Settings.data('savedArticleNum', articleNum);
+		Settings.data('savedPageNum', pageNum);
 }
 
 function removeOldPages() {
