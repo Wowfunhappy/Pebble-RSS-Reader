@@ -52,8 +52,6 @@ Settings.config({url: 'https://wowfunhappy.github.io/Pebble-RSS-Reader/', hash: 
 var articlePageHistory = [];
 var articleSelectMenuExists = false;
 
-console.log("Saved data: " + Settings.data('savedArticleList') + Settings.data('savedArticleNum') + Settings.data('savedPageNum'));
-
 selectFeed();
 if (allSavedInfoExists()) {
 	displayArticlePage(Settings.data('savedArticleList'), Settings.data('savedArticleNum'), Settings.data('savedPageNum'));
@@ -66,7 +64,6 @@ function removeSavedInfo() {
 	Settings.data('savedPageNum', undefined);
 	//savedFeed is NOT removed!
 }
-
 function allSavedInfoExists() {
 	if (typeof Settings.data('savedFeed') === 'undefined' || typeof Settings.data('savedArticleList') === 'undefined' || typeof Settings.data('savedArticleNum') === 'undefined' || typeof Settings.data('savedPageNum') === 'undefined') {
 		return false;
@@ -74,6 +71,11 @@ function allSavedInfoExists() {
 	else {
 		return true;
 	}
+}
+function saveCurrPage(articleList, articleNum, pageNum) {
+		Settings.data('savedArticleList', articleList);
+		Settings.data('savedArticleNum', articleNum);
+		Settings.data('savedPageNum', pageNum);
 }
 
 function selectFeed() {
@@ -417,12 +419,6 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 	//Hack to fix PebbleJS bug. (Overrides back button so I can handle it above.)
 	articleCard.on('click', 'back', function(){});
 	articleCard.on('longClick', 'back', function(){});
-}
-
-function saveCurrPage(articleList, articleNum, pageNum) {
-		Settings.data('savedArticleList', articleList);
-		Settings.data('savedArticleNum', articleNum);
-		Settings.data('savedPageNum', pageNum);
 }
 
 function removeOldPages() {
