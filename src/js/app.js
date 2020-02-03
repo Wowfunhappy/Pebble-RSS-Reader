@@ -55,7 +55,6 @@ var articleSelectMenuExists = false;
 selectFeed();
 if (allSavedInfoExists()) {
 	displayArticlePage(Settings.data('savedArticleList'), Settings.data('savedArticleNum'), Settings.data('savedPageNum'));
-	removeSavedInfo();
 }
 
 function removeSavedInfo() {
@@ -99,10 +98,6 @@ function selectFeed() {
 
 	feedSelectMenu.on('select', function(e) {
 		getArticles(feeds[e.itemIndex]);
-	});
-	
-	feedSelectMenu.on('show', function() {
-		removeSavedInfo();
 	});
 }
 
@@ -378,7 +373,7 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 			else {
 				if (articleSelectMenuExists) {
 					articleSelectMenu.show();
-					articleSelectMenu.selection(0, articleNum + 1); //Note: will select wrong story if feed updated since article was saved.
+					articleSelectMenu.selection(0, articleNum + 1); //Note: will leave wrong story selected if feed was updated since article was saved.
 				}
 				else {
 					getArticles(Settings.data('savedFeed'));
@@ -397,7 +392,6 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 				else {
 					if (articleSelectMenuExists) {
 						articleSelectMenu.show();
-						//articleSelectMenu.selection(0, articleNum); //Note: will select wrong story if feed updated since article was saved.
 					}
 					else {
 						getArticles(Settings.data('savedFeed'));	
