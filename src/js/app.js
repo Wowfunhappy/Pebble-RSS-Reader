@@ -76,9 +76,8 @@ function selectFeed()
 	});
 }
 
-var getArticlesShouldCancel;
+var loadingCardVisible;
 function getArticles(feed) {
-	getArticlesShouldCancel = false;
 	loadingCard = new UI.Card({status: blackStatusBar});
 	loadingCard.title(" ");
 	loadingCard.subtitle(" ");
@@ -89,6 +88,7 @@ function getArticles(feed) {
 		loadingCard.body("        Loading...");
 	}
 	loadingCard.show();
+	loadingCardVisible = true;
 	articleList = [];
 	jsonUrl = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feed.url);
 
@@ -110,7 +110,7 @@ function getArticles(feed) {
 				};
 				articleList.push(article);
 				if (articleList.length === json.items.length) {
-					if (! getArticlesShouldCancel) {
+					if (loadingCardVisible) {
 						selectArticle(articleList, feed.title);
 					}
 					loadingCard.hide();
@@ -127,6 +127,10 @@ function getArticles(feed) {
 			}
 			problemCard.show();
 		}
+	});
+	/* Handle case where user returned to menu while article was loading. */
+	loadingCard.on('hide', function() {
+		loadingCardVisible = false;
 	});
 }
 
