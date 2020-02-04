@@ -51,6 +51,8 @@ Settings.config({url: 'https://wowfunhappy.github.io/Pebble-RSS-Reader/', hash: 
 
 var articlePageHistory = [];
 var articleSelectMenuExists = false;
+var lastSeenArticleNum = -1;
+var lastSeenPageNum = -1;
 
 selectFeed();
 if (allSavedInfoExists()) {
@@ -75,6 +77,8 @@ function saveCurrPage(articleList, articleNum, pageNum) {
 		Settings.data('savedArticleList', articleList);
 		Settings.data('savedArticleNum', articleNum);
 		Settings.data('savedPageNum', pageNum);
+		lastSeenArticleNum = articleNum;
+		lastSeenPageNum = pageNum;
 }
 
 function selectFeed() {
@@ -304,6 +308,11 @@ function selectArticle(articleList, heading) {
 	articleSelectMenu.on("select", function(e) {
 		displayArticlePage(articleList, e.itemIndex, 0);
 	});
+	articleSelectMenu.on("longSelect", function() {
+		if (lastSeenArticleNum !== -1 && lastSeenPageNum !== -1) {
+			displayArticlePage(articleList, lastSeenArticleNum, lastSeenPageNum);
+		}
+	})
 	
 	articleSelectMenu.on('show', function() {
 		removeSavedInfo();
@@ -312,6 +321,7 @@ function selectArticle(articleList, heading) {
 }
 
 function displayArticlePage(articleList, articleNum, pageNum) {
+	//console.log(JSON.stringify(articlePageHistory));
 	article = articleList[articleNum];
 	articleCard = new UI.Card({status: blackStatusBar});
 	if (pageNum === 0) {
@@ -348,13 +358,18 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 	}
 
 	articleCard.show();
-	articlePageHistory.push(articleCard);
 	
 	saveCurrPage(articleList, articleNum, pageNum);
+	articlePageHistory.push(articleCard);
 	articleCard.on('show', function() {
 		saveCurrPage(articleList, articleNum, pageNum);
+		articlePageHistory.push(articleCard);
 	});
-	
+
+	articleCard.on('hide', function() {
+		articlePageHistory.pop();
+	})
+
 	articleCard.on('click', function(e) {
 		if (e.button === 'select' || e.button === 'down') {
 			if (pageNum < article.pages.length - 1) {
@@ -371,9 +386,6 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 			}
 		}
 		if (e.button === 'up' || e.button === 'back') {
-			articlePageHistory.pop();
-			this.hide();
-			
 			if (articlePageHistory.length <= 1) {
 				//Previous page is not in stack.
 				if (pageNum > 0) {
@@ -389,6 +401,7 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 
 				}
 			}
+			this.hide();
 		}
 	});
 	articleCard.on('longClick', 'select', function() {
