@@ -313,7 +313,11 @@ function selectArticle(articleList, heading) {
 	})
 	
 	articleSelectMenu.on('show', function() {
-		removeSavedInfo();
+		setTimeout(function(){
+			//PebbleJS has a tendency to crash here.
+			//I can't fix the crash, but I can wait a bit before removing savedInfo to make it less painful.
+			removeSavedInfo();
+		}, 800);
 	});
 }
 
