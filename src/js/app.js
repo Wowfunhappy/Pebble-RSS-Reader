@@ -54,8 +54,14 @@ var lastSeenArticleNum = -1;
 var lastSeenPageNum = -1;
 
 selectFeed();
-if (allSavedInfoExists()) {
-	displayArticlePage(Settings.data('savedArticleList'), Settings.data('savedArticleNum'), Settings.data('savedPageNum'));
+
+if (typeof Settings.data().welcomeScreenCompleted === 'undefined') {
+	welcomeScreen();
+}
+else {
+	if (allSavedInfoExists()) {
+		displayArticlePage(Settings.data('savedArticleList'), Settings.data('savedArticleNum'), Settings.data('savedPageNum'));
+	}
 }
 
 function removeSavedInfo() {
@@ -80,6 +86,7 @@ function saveCurrPage(articleList, articleNum, pageNum) {
 		lastSeenPageNum = pageNum;
 }
 
+var feedSelectMenu;
 function selectFeed() {
 	/*Overwrite default feeds with what user input in Settings.*/
 	if (typeof Settings.option().feeds !== 'undefined' && Settings.option().feeds.length > 0) {
@@ -101,6 +108,10 @@ function selectFeed() {
 
 	feedSelectMenu.on('select', function(e) {
 		getArticles(feeds[e.itemIndex]);
+	});
+
+	feedSelectMenu.on('longSelect', function() {
+		welcomeScreen();
 	});
 }
 
@@ -408,4 +419,106 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 	
 	//Hack to override back button so PebbleJS lets us handle it above.
 	articleCard.on('click', 'back', function(){});
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*There are many cleverer ways I could have written this welcome sequence. However, this way was the easiest.*/
+
+var lastSeenWelcomeScreenNum = 1;
+function welcomeScreen() {
+	switch(lastSeenWelcomeScreenNum) {
+		case 1:
+			welcomeScreen1();
+			break;
+		case 2:
+			welcomeScreen2();
+			break;
+		case 3:
+			welcomeScreen3();
+			break;
+		case 4:
+			welcomeScreen4();
+			break;
+		case 5:
+			welcomeScreen5();
+			break;
+		case 6:
+			welcomeScreen6();
+			break;
+	}
+}
+
+function welcomeScreen1() {
+	lastSeenWelcomeScreenNum = 1;
+	welcomeCard = new UI.Card({status: blackStatusBar});
+	welcomeCard.scrollable(true);
+	welcomeCard.action({
+		up: 'images/action_up.png',
+		select: "images/action_next.png",
+		down: 'images/action_down.png'
+	});	
+
+	welcomeCard.body("Welcome to the Pebble RSS Reader!\n\nBefore you start reading articles, there's a few things you should know!");
+	welcomeCard.show();
+
+	welcomeCard.on('click', 'back', function(){}); //Disable back button.
+	welcomeCard.on('click', 'select', function() {
+		welcomeScreen2();
+	});
+	welcomeCard.on('longClick', function(e) {if (e.button === 'select') {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();}});
+}
+
+function welcomeScreen2() {
+	lastSeenWelcomeScreenNum = 2;
+	welcomeCard = new UI.Card({status: blackStatusBar});
+	welcomeCard.body("Press the BACK or UP buttons to return to the previous page.\n\nPress the SELECT or DOWN buttons to go to the next page.");
+	welcomeCard.show();
+	welcomeCard.on('click', 'back', function(){}); //Disable back button.
+	welcomeCard.on('longClick', function(e) {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();});
+	welcomeCard.on('click', function(e) {if (e.button === 'up' || e.button === 'back') {welcomeScreen1();this.hide();}if (e.button === 'select' || e.button === 'down') {welcomeScreen3();}});
+}
+
+function welcomeScreen3(){
+	lastSeenWelcomeScreenNum = 3;
+	welcomeCard = new UI.Card({status: blackStatusBar});
+	welcomeCard.body("Some paragraphs are too long to fit on a single page. If you see a symbol at the end of a page, it ›");
+	welcomeCard.show();
+	welcomeCard.on('click', 'back', function(){}); //Disable back button.
+	welcomeCard.on('longClick', function(e) {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();});
+	welcomeCard.on('click', function(e) {if (e.button === 'up' || e.button === 'back') {welcomeScreen2();this.hide();}if (e.button === 'select' || e.button === 'down') {welcomeScreen4();}});
+}
+
+function welcomeScreen4(){
+	lastSeenWelcomeScreenNum = 4;
+	welcomeCard = new UI.Card({status: blackStatusBar});
+	welcomeCard.body("‹ means that the current paragraph will be continued on the next page.");
+	welcomeCard.show();
+	welcomeCard.on('click', 'back', function(){}); //Disable back button.
+	welcomeCard.on('longClick', function(e) {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();});
+	welcomeCard.on('click', function(e) {if (e.button === 'up' || e.button === 'back') {welcomeScreen3();this.hide();}if (e.button === 'select' || e.button === 'down') {welcomeScreen5();}});
+}
+
+function welcomeScreen5(){
+	lastSeenWelcomeScreenNum = 5;
+	welcomeCard = new UI.Card({status: blackStatusBar});
+	welcomeCard.body("Hold down the SELECT button to open the menu. Do it again to return to what you were reading.");
+	welcomeCard.show();
+	welcomeCard.on('click', 'back', function(){}); //Disable back button.
+	welcomeCard.on('longClick', function(e) {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();});
+	welcomeCard.on('click', function(e) {if (e.button === 'up' || e.button === 'back') {welcomeScreen4();this.hide();}if (e.button === 'select' || e.button === 'down') {welcomeScreen6();}});
+}
+
+function welcomeScreen6(){
+	lastSeenWelcomeScreenNum = 6;
+	welcomeCard = new UI.Card({status: blackStatusBar});
+	welcomeCard.body("That's all for now! Open the menu to choose a feed.");
+	welcomeCard.show();
+	welcomeCard.on('click', 'back', function(){}); //Disable back button.
+	welcomeCard.on('click', function(e) {if (e.button === 'up' || e.button === 'back') {welcomeScreen5();this.hide();}});
+	welcomeCard.on('longClick', function(e) {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();});
+}
+
+function welcomeScreenCleanup(){
+
 }
