@@ -274,6 +274,7 @@ static void long_click_handler(ClickRecognizerRef recognizer, void *context) {
   SimplyWindow *self = context;
   ButtonId button = click_recognizer_get_button_id(recognizer);
   bool is_enabled = (self->button_mask & (1 << button));
+  prv_send_long_click(self->simply->msg, button);
   if (is_enabled) {
     prv_send_long_click(self->simply->msg, button);
   }
@@ -286,6 +287,21 @@ static void click_config_provider(void *context) {
       window_set_click_context(i, context);
       window_single_click_subscribe(i, simply_window_single_click_handler);
       window_long_click_subscribe(i, 500, (ClickHandler) long_click_handler, NULL);
+      
+      /*🚨🚨🚨WOWFUNHAPPY HACK ALERT!🚨🚨🚨
+      * I (Wowfunhappy) added the below multi_click_subscribe line. PebbleJS doesn't actually offer a way to handle multi_click events—this code has a different purpose.
+      * 
+      * Normally in PebbleJS, the "up", "select", and "down" buttons activate on release, while "back" activates on press. This REALLY bothered me, so I investigated what was going on. This led me to an interesting tidbit in the Develeloper Documentation: https://developer.rebble.io/developer.pebble.com/docs/c/User_Interface/Window/index.html#window_set_click_config_provider:
+      * 	"When there is no multi_click nor long_click setup, the single click handler will fire directly on button down."
+      * 
+      * So as best as I can tell (because I don't understand C and have no clue what I'm doing), what's going on is this:
+      * 1. PebbleJS registers a longClick handler for every button—see "window_long_click_subscribe" above.
+      * 2. Pebble accepts the handler for every button except "back", because Pebble doesn't allow overriding longClick behavior on the back button.
+      * 
+      * However, Pebble DOES allow us to register multi_click handlers for the back button. And so, I arrived at the "dummy" handler below: */
+      window_multi_click_subscribe(BUTTON_ID_BACK, 2, 0, 1, true, simply_window_single_click_handler);
+      /*🚨End Wowfunhappy Hack🚨*/
+      
     }
   }
   if (self->is_scrollable) {
