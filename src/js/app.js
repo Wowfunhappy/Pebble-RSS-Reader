@@ -49,7 +49,6 @@ Settings.config({url: 'https://wowfunhappy.github.io/Pebble-RSS-Reader/', hash: 
 
 /*-----------------------------------------------------------------------------*/
 
-var articlePageHistory = [];
 var articleSelectMenuExists = false;
 var lastSeenArticleNum = -1;
 var lastSeenPageNum = -1;
@@ -303,7 +302,6 @@ function selectArticle(articleList, heading) {
 	articleSelectMenu.show();
 	articleSelectMenuExists = true;
 	removeSavedInfo();
-	removeOldPages();
 
 	articleSelectMenu.on("select", function(e) {
 		displayArticlePage(articleList, e.itemIndex, 0);
@@ -316,12 +314,10 @@ function selectArticle(articleList, heading) {
 	
 	articleSelectMenu.on('show', function() {
 		removeSavedInfo();
-		removeOldPages();
 	});
 }
 
 function displayArticlePage(articleList, articleNum, pageNum) {
-	//console.log(JSON.stringify(articlePageHistory));
 	article = articleList[articleNum];
 	articleCard = new UI.Card({status: blackStatusBar});
 	if (pageNum === 0) {
@@ -360,15 +356,9 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 	articleCard.show();
 	
 	saveCurrPage(articleList, articleNum, pageNum);
-	articlePageHistory.push(articleCard);
 	articleCard.on('show', function() {
 		saveCurrPage(articleList, articleNum, pageNum);
-		articlePageHistory.push(articleCard);
 	});
-
-	articleCard.on('hide', function() {
-		articlePageHistory.pop();
-	})
 
 	articleCard.on('click', function(e) {
 		if (e.button === 'select' || e.button === 'down') {
@@ -386,23 +376,20 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 			}
 		}
 		if (e.button === 'up' || e.button === 'back') {
-			if (articlePageHistory.length <= 1) {
-				//Previous page is not in stack.
-				if (pageNum > 0) {
-					displayArticlePage(articleList, articleNum, pageNum - 1);
+			if (pageNum > 0) {
+				displayArticlePage(articleList, articleNum, pageNum - 1);
+			}
+			else {
+				if (articleSelectMenuExists) {
+					articleSelectMenu.show();
 				}
 				else {
-					if (articleSelectMenuExists) {
-						articleSelectMenu.show();
-					}
-					else {
-						getArticles(Settings.data('savedFeed'));	
-					}
-
+					getArticles(Settings.data('savedFeed'));	
 				}
+
 			}
-			this.hide();
 		}
+		this.hide();
 	});
 	articleCard.on('longClick', 'select', function() {
 		if (articleSelectMenuExists) {
@@ -411,16 +398,9 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 		else {
 			getArticles(Settings.data('savedFeed'));	
 		}
+		this.hide();
 	});
 	
 	//Hack to fix PebbleJS bug. (Overrides back button so I can handle it above.)
 	articleCard.on('click', 'back', function(){});
-}
-
-function removeOldPages() {
-	if (articlePageHistory.length > 0) {
-		for (i = 0; i < articlePageHistory.length; i++) {
-			articlePageHistory[i].hide();
-		}
-	}
 }
