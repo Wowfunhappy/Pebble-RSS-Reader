@@ -293,31 +293,21 @@ function selectArticle(articleList, heading) {
 		sections: [{
 			title: heading,
 			items: articleDisplayTitles
-		},
-		{
-			title: " –––––––––––––––",
-			items: [{
-				title: "  ‹  Change Feed",
-			}]
 		}]
 	});
 
 	articleSelectMenu.show();
 	articleSelectMenuExists = true;
 	removeSavedInfo();
+	removeOldPages();
 
 	articleSelectMenu.on("select", function(e) {
-		removeOldPages();
-		if (e.sectionIndex === 0) {			
-			displayArticlePage(articleList, e.itemIndex, 0);
-		}
-		else {
-			articleSelectMenu.hide();
-		}
+		displayArticlePage(articleList, e.itemIndex, 0);
 	});
 	
 	articleSelectMenu.on('show', function() {
 		removeSavedInfo();
+		removeOldPages();
 	});
 }
 
