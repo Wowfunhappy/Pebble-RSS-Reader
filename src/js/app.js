@@ -412,7 +412,6 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 	
 	//Hack to fix PebbleJS bug. (Overrides back button so I can handle it above.)
 	articleCard.on('click', 'back', function(){});
-	articleCard.on('longClick', 'back', function(){});
 }
 
 function removeOldPages() {
