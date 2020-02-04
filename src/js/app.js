@@ -314,7 +314,7 @@ function selectArticle(articleList, heading) {
 	
 	articleSelectMenu.on('show', function() {
 		setTimeout(function(){
-			//PebbleJS has a tendency to crash here.
+			//PebbleJS has a tendency to crash here, with certain articles. (The Atlantic is particularly troublesome.)
 			//I can't fix the crash because it's not my code, but I can wait a bit before removing savedInfo to make it less painful.
 			removeSavedInfo();
 		}, 900);
@@ -386,6 +386,7 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 			else {
 				if (articleSelectMenuExists) {
 					articleSelectMenu.show();
+					articleSelectMenu.selection(0, articleNum); //Note: will leave wrong story selected if feed was updated since article was saved.
 				}
 				else {
 					getArticles(Settings.data('savedFeed'));
@@ -397,6 +398,7 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 	articleCard.on('longClick', 'select', function() {
 		if (articleSelectMenuExists) {
 			articleSelectMenu.show();
+			articleSelectMenu.selection(0, articleNum); //Note: will leave wrong story selected if feed was updated since article was saved.
 		}
 		else {
 			getArticles(Settings.data('savedFeed'));	
