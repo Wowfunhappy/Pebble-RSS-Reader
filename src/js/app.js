@@ -52,10 +52,13 @@ Settings.config({url: 'https://wowfunhappy.github.io/Pebble-RSS-Reader/', hash: 
 var articleSelectMenuExists = false;
 var lastSeenArticleNum = -1;
 var lastSeenPageNum = -1;
+var feedSelectMenu;
+var loadingCardVisible;
+var articleSelectMenu = {};
 
 selectFeed();
 
-if (typeof Settings.data().welcomeScreenCompleted === 'undefined') {
+if (typeof Settings.data('welcomeScreenCompleted') === 'undefined') {
 	welcomeScreen();
 }
 else {
@@ -86,7 +89,6 @@ function saveCurrPage(articleList, articleNum, pageNum) {
 		lastSeenPageNum = pageNum;
 }
 
-var feedSelectMenu;
 function selectFeed() {
 	/*Overwrite default feeds with what user input in Settings.*/
 	if (typeof Settings.option().feeds !== 'undefined' && Settings.option().feeds.length > 0) {
@@ -115,7 +117,6 @@ function selectFeed() {
 	});
 }
 
-var loadingCardVisible;
 function getArticles(feed) {
 	loadingCard = new UI.Card({status: blackStatusBar});
 	loadingCard.title(" ");
@@ -284,7 +285,6 @@ function formatText(text) {
 	}
 }
 
-var articleSelectMenu = {};
 function selectArticle(articleList, heading) {
 	articleDisplayTitles = [];
 	if (! Feature.round()) {
@@ -425,10 +425,9 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 
 /*There are many cleverer ways I could have written this welcome sequence. However, this way was the easiest.*/
 
-var lastSeenWelcomeScreenNum = 1;
 function welcomeScreen() {
-	switch(lastSeenWelcomeScreenNum) {
-		case 1:
+	switch(Settings.data('lastSeenWelcomeScreenNum')) {
+		default:
 			welcomeScreen1();
 			break;
 		case 2:
@@ -446,11 +445,14 @@ function welcomeScreen() {
 		case 6:
 			welcomeScreen6();
 			break;
+		case 7:
+			welcomeScreen7();
+			break;
 	}
 }
 
 function welcomeScreen1() {
-	lastSeenWelcomeScreenNum = 1;
+	Settings.data('lastSeenWelcomeScreenNum', 1);
 	welcomeCard = new UI.Card({status: blackStatusBar});
 	welcomeCard.scrollable(true);
 	welcomeCard.action({
@@ -465,60 +467,67 @@ function welcomeScreen1() {
 	welcomeCard.on('click', 'back', function(){}); //Disable back button.
 	welcomeCard.on('click', 'select', function() {
 		welcomeScreen2();
+		this.hide();
 	});
 	welcomeCard.on('longClick', function(e) {if (e.button === 'select') {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();}});
 }
 
 function welcomeScreen2() {
-	lastSeenWelcomeScreenNum = 2;
+	Settings.data('lastSeenWelcomeScreenNum', 2);
 	welcomeCard = new UI.Card({status: blackStatusBar});
 	welcomeCard.body("Press the BACK or UP buttons to return to the previous page.\n\nPress the SELECT or DOWN buttons to go to the next page.");
 	welcomeCard.show();
 	welcomeCard.on('click', 'back', function(){}); //Disable back button.
-	welcomeCard.on('longClick', function(e) {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();});
-	welcomeCard.on('click', function(e) {if (e.button === 'up' || e.button === 'back') {welcomeScreen1();this.hide();}if (e.button === 'select' || e.button === 'down') {welcomeScreen3();}});
+	welcomeCard.on('longClick', function(e) {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();this.hide();});
+	welcomeCard.on('click', function(e) {if (e.button === 'up' || e.button === 'back') {welcomeScreen1();this.hide();}if (e.button === 'select' || e.button === 'down') {welcomeScreen3();this.hide();}});
 }
 
 function welcomeScreen3(){
-	lastSeenWelcomeScreenNum = 3;
+	Settings.data('lastSeenWelcomeScreenNum', 3);
 	welcomeCard = new UI.Card({status: blackStatusBar});
 	welcomeCard.body("Some paragraphs are too long to fit on a single page. If you see a symbol at the end of a page, it ›");
 	welcomeCard.show();
 	welcomeCard.on('click', 'back', function(){}); //Disable back button.
-	welcomeCard.on('longClick', function(e) {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();});
-	welcomeCard.on('click', function(e) {if (e.button === 'up' || e.button === 'back') {welcomeScreen2();this.hide();}if (e.button === 'select' || e.button === 'down') {welcomeScreen4();}});
+	welcomeCard.on('longClick', function(e) {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();this.hide();});
+	welcomeCard.on('click', function(e) {if (e.button === 'up' || e.button === 'back') {welcomeScreen2();this.hide();}if (e.button === 'select' || e.button === 'down') {welcomeScreen4();this.hide();}});
 }
 
 function welcomeScreen4(){
-	lastSeenWelcomeScreenNum = 4;
+	Settings.data('lastSeenWelcomeScreenNum', 4);
 	welcomeCard = new UI.Card({status: blackStatusBar});
 	welcomeCard.body("‹ means that the current paragraph will be continued on the next page.");
 	welcomeCard.show();
 	welcomeCard.on('click', 'back', function(){}); //Disable back button.
-	welcomeCard.on('longClick', function(e) {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();});
-	welcomeCard.on('click', function(e) {if (e.button === 'up' || e.button === 'back') {welcomeScreen3();this.hide();}if (e.button === 'select' || e.button === 'down') {welcomeScreen5();}});
+	welcomeCard.on('longClick', function(e) {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();this.hide();});
+	welcomeCard.on('click', function(e) {if (e.button === 'up' || e.button === 'back') {welcomeScreen3();this.hide();}if (e.button === 'select' || e.button === 'down') {welcomeScreen5();this.hide();}});
 }
 
 function welcomeScreen5(){
-	lastSeenWelcomeScreenNum = 5;
+	Settings.data('lastSeenWelcomeScreenNum', 5);
+	welcomeCard = new UI.Card({status: blackStatusBar});
+	welcomeCard.body("Hold down the BACK button to exit the app. We'll remember where you left off.");
+	welcomeCard.show();
+	welcomeCard.on('click', 'back', function(){}); //Disable back button.
+	welcomeCard.on('longClick', function(e) {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();this.hide();});
+	welcomeCard.on('click', function(e) {if (e.button === 'up' || e.button === 'back') {welcomeScreen4();this.hide();}if (e.button === 'select' || e.button === 'down') {welcomeScreen6();this.hide();}});
+}
+
+function welcomeScreen6(){
+	Settings.data('lastSeenWelcomeScreenNum', 6);
 	welcomeCard = new UI.Card({status: blackStatusBar});
 	welcomeCard.body("Hold down the SELECT button to open the menu. Do it again to return to what you were reading.");
 	welcomeCard.show();
 	welcomeCard.on('click', 'back', function(){}); //Disable back button.
-	welcomeCard.on('longClick', function(e) {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();});
-	welcomeCard.on('click', function(e) {if (e.button === 'up' || e.button === 'back') {welcomeScreen4();this.hide();}if (e.button === 'select' || e.button === 'down') {welcomeScreen6();}});
+	welcomeCard.on('longClick', function(e) {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();this.hide();});
+	welcomeCard.on('click', function(e) {if (e.button === 'up' || e.button === 'back') {welcomeScreen5();this.hide();}if (e.button === 'select' || e.button === 'down') {welcomeScreen7();this.hide();}});
 }
 
-function welcomeScreen6(){
-	lastSeenWelcomeScreenNum = 6;
+function welcomeScreen7(){
+	Settings.data('lastSeenWelcomeScreenNum', 7);
 	welcomeCard = new UI.Card({status: blackStatusBar});
 	welcomeCard.body("That's all for now! Open the menu to choose a feed.");
 	welcomeCard.show();
 	welcomeCard.on('click', 'back', function(){}); //Disable back button.
-	welcomeCard.on('click', function(e) {if (e.button === 'up' || e.button === 'back') {welcomeScreen5();this.hide();}});
-	welcomeCard.on('longClick', function(e) {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();});
-}
-
-function welcomeScreenCleanup(){
-
+	welcomeCard.on('click', function(e) {if (e.button === 'up' || e.button === 'back') {welcomeScreen6();this.hide();}});
+	welcomeCard.on('longClick', function(e) {Settings.data('welcomeScreenCompleted', true);feedSelectMenu.show();this.hide();});
 }
