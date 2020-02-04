@@ -315,9 +315,9 @@ function selectArticle(articleList, heading) {
 	articleSelectMenu.on('show', function() {
 		setTimeout(function(){
 			//PebbleJS has a tendency to crash here.
-			//I can't fix the crash, but I can wait a bit before removing savedInfo to make it less painful.
+			//I can't fix the crash because it's not my code, but I can wait a bit before removing savedInfo to make it less painful.
 			removeSavedInfo();
-		}, 800);
+		}, 900);
 	});
 }
 
@@ -388,9 +388,8 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 					articleSelectMenu.show();
 				}
 				else {
-					getArticles(Settings.data('savedFeed'));	
+					getArticles(Settings.data('savedFeed'));
 				}
-
 			}
 		}
 		this.hide();
@@ -405,6 +404,6 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 		this.hide();
 	});
 	
-	//Hack to fix PebbleJS bug. (Overrides back button so I can handle it above.)
+	//Hack to override back button so PebbleJS lets us handle it above.
 	articleCard.on('click', 'back', function(){});
 }
