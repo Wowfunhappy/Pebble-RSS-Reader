@@ -50,10 +50,9 @@ Settings.config({url: 'https://wowfunhappy.github.io/Pebble-RSS-Reader/', hash: 
 /*-----------------------------------------------------------------------------*/
 
 var articleSelectMenuExists = false;
-var lastSeenArticleNum = -1;
-var lastSeenPageNum = -1;
 var feedSelectMenu;
 var loadingCardVisible;
+var lastSeenArticleCard = {};
 var articleSelectMenu = {};
 
 selectFeed();
@@ -81,15 +80,15 @@ function allSavedInfoExists() {
 		return true;
 	}
 }
-function saveCurrPage(articleList, articleNum, pageNum) {
+function saveCurrPage(articleCard, articleList, articleNum, pageNum) {
 		Settings.data('savedArticleList', articleList);
 		Settings.data('savedArticleNum', articleNum);
 		Settings.data('savedPageNum', pageNum);
-		lastSeenArticleNum = articleNum;
-		lastSeenPageNum = pageNum;
+		lastSeenArticleCard = articleCard;
 }
 
 function selectFeed() {
+
 	/*Overwrite default feeds with what user input in Settings.*/
 	if (typeof Settings.option().feeds !== 'undefined' && Settings.option().feeds.length > 0) {
 		feeds = Settings.option().feeds;
@@ -115,6 +114,11 @@ function selectFeed() {
 	feedSelectMenu.on('longSelect', function() {
 		welcomeScreen();
 	});
+
+	lastSeenArticleCard = {};
+	feedSelectMenu.on('show', function(){
+		lastSeenArticleCard = {};
+	})
 }
 
 function getArticles(feed) {
@@ -318,8 +322,12 @@ function selectArticle(articleList, heading) {
 		displayArticlePage(articleList, e.itemIndex, 0);
 	});
 	articleSelectMenu.on("longSelect", function() {
-		if (lastSeenArticleNum !== -1 && lastSeenPageNum !== -1) {
-			displayArticlePage(articleList, lastSeenArticleNum, lastSeenPageNum);
+		if (Object.keys(lastSeenArticleCard).length !== 0) {
+			console.log("Yay");
+			lastSeenArticleCard.show();
+		}
+		else {
+			console.log("okay!");
 		}
 	})
 	
@@ -328,7 +336,7 @@ function selectArticle(articleList, heading) {
 			//PebbleJS has a tendency to crash here, with certain articles. (The Atlantic is particularly troublesome.)
 			//I can't fix the crash because it's not my code, but I can wait a bit before removing savedInfo to make it less painful.
 			removeSavedInfo();
-		}, 900);
+		}, 950);
 	});
 }
 
@@ -370,9 +378,9 @@ function displayArticlePage(articleList, articleNum, pageNum) {
 
 	articleCard.show();
 	
-	saveCurrPage(articleList, articleNum, pageNum);
+	saveCurrPage(articleCard, articleList, articleNum, pageNum);
 	articleCard.on('show', function() {
-		saveCurrPage(articleList, articleNum, pageNum);
+		saveCurrPage(articleCard, articleList, articleNum, pageNum);
 	});
 
 	articleCard.on('click', function(e) {
