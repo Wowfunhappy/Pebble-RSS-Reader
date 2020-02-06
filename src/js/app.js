@@ -323,11 +323,7 @@ function selectArticle(articleList, heading) {
 	});
 	articleSelectMenu.on("longSelect", function() {
 		if (Object.keys(lastSeenArticleCard).length !== 0) {
-			console.log("Yay");
 			lastSeenArticleCard.show();
-		}
-		else {
-			console.log("okay!");
 		}
 	})
 	
