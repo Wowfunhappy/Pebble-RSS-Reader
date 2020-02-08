@@ -290,7 +290,7 @@ function formatText(text) {
 }
 
 function selectArticle(articleList, heading) {
-	articleDisplayTitles = [];
+	/*articleDisplayTitles = [];
 	if (! Feature.round()) {
 		for (i = 0; i < articleList.length; i++) {
 			currTitle = [];
@@ -304,13 +304,13 @@ function selectArticle(articleList, heading) {
 	}
 	else {
 		articleDisplayTitles = articleList;
-	}
+	}*/
 
 	articleSelectMenu = new UI.Menu({
 		status: false,
 		sections: [{
 			title: heading,
-			items: articleDisplayTitles
+			items: articleList
 		}]
 	});
 
